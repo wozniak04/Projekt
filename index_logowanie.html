@@ -1,45 +1,22 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style/css_index.css">
-    <title>eApteka - Rejestracja na stronę</title>
-    <script src="walidacja.js"></script>
+    <link rel="stylesheet" type="text/css" href="Projekt_praktyki/css_logowanie.css">
+    <title>eApteka - Logowanie na strone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header>
-    
-
-    </header>
     <main>
-        <div id="rejestracja_eh">
+        <div id="logowanie_eh">
             <!--Rejestracja Konta - menu rejestracji-->
-            <p id="Rejestracja">Zarejestruj Się!</p>
-<<<<<<< Updated upstream
-            <img src="zdjecia/zdjecie_rejestracja.png" id="zdjecie_rejestracja">
-            <p id="masz_konto">Masz konto? <a href="przykladowyLinkDoStrony.html" target="_blank"> Zaloguj się</a></p>
-            
-            <form action="" method="GET">
-                <input type="name" value=""  id="rejestracja_e" placeholder="Email" required><br><br>
-                <input type="password" value="" placeholder="Password" id="rejestracja_h" ><br><br>
-                <input type="button" value="Dalej" id="przycisk_dalej_rejestracja" onclick="sprawdzanie_rejestracji()"><br><br>
-            
-=======
-            <img src="Projekt_praktyki/zdjecie_rejestracja.png" id="zdjecie_rejestracja">
-            <p id="masz_konto">Masz konto? <a href="index.php" target="_blank"> Zaloguj się</a></p>
-           
+            <p id="logowanie">Zaloguj Sie!</p>
+            <img src="Projekt_praktyki/zdjecie_rejestracja.png" id="zdjecie_logowanie">
+            <p id="masz_konto">Nie masz konta? <a href="index_rejestracja.html" target="_blank"> Zarejestruj sie!</a></p>
+            <p id="private_user">Zachowujemy prywatnosc Naszych uzytkownikow!</p>
             <form action="register.php" method="post">
-                <input type="name" value="" name="username" id="rejestracja_e" placeholder="username" required><br><br>
-                <input type="password" value="" name="password" placeholder="password" id="rejestracja_h" ><br><br>
-                <input type="password" value="" name="password1" placeholder="password" id="rejestracja_h1" ><br><br>
-
-                <input type="button" value="Dalej" name="przycisk_dalej" id="przycisk_dalej_rejestracja" onclick=""><br><br>
->>>>>>> Stashed changes
+                <input type="name" value="" name="Username" placeholder="Username" id="logowanie_u" required><br><br>
+                <input type="password" value="" name="password" placeholder="Haslo" id="logowanie_h" required><br><br>
+                <input type="button" value="Dalej" name="przycisk_dalej" id="przycisk_dalej_logowanie" onclick=""><br><br>
             </form>
-
-        </div>
-        
+        </div>       
     </main>
-    <footer>
-        <!--Stopka Strony Logowania--> 
-
-    </footer>
 </body>
