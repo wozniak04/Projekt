@@ -112,3 +112,32 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: small;
 }
+
+#blad_username{
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    font-size: x-small;
+    color: red;
+}
+#blad_password{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    font-size: x-small;
+    color: red;
+}
+#blad_password_powtorz{
+    position: absolute;
+    left: 5%;
+    top: 60%;
+    font-size: x-small;
+    color: red;
+}
+#blad_email{
+    position: absolute;
+    left: 54%;
+    top: 40%;
+    font-size: x-small;
+    color: red;
+}
