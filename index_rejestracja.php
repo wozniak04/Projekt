@@ -11,7 +11,7 @@
             <!--Rejestracja Konta - menu rejestracji-->
             <p id="logowanie">Zarejestruj Sie!</p>
             <img src="zdjecia/zdjecie_rejestracja.png" id="zdjecie_logowanie">
-            <p id="masz_konto">Masz konto? <a href="index_logowanie.html" target="_blank"> Zaloguj sie!</a></p>
+            <p id="masz_konto">Masz konto? <a href="index_logowanie.php" > Zaloguj sie!</a></p>
             <p id="private_user">Zachowujemy prywatnosc Naszych uzytkownikow!</p>
             <form action="register.php" method="post">
                 <input type="text" value="" name="Username" placeholder="Username" id="logowanie_u" required  onfocusout=""><br><br>
