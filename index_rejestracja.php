@@ -14,19 +14,26 @@
             <p id="masz_konto">Masz konto? <a href="index_logowanie.php" > Zaloguj sie!</a></p>
             <p id="private_user">Zachowujemy prywatnosc Naszych uzytkownikow!</p>
             <form action="register.php" method="post">
-                <input type="text" value="" name="Username" placeholder="Username" id="logowanie_u" required  onfocusout=""><br><br>
-                <input type="password" value="" name="password" placeholder="Haslo" id="logowanie_h" onfocusout="sprawdz_haslo()" required ><br><br>
+                
+                
                 <input type="name" value="" name="Username" placeholder="Username" id="logowanie_u" required onfocusout=""><br><br>
                 <p id="blad_username">gg</p>
-                <input type="password" value="" name="password" placeholder="Haslo" id="logowanie_h" required onfocusout=""><br><br>
+                
+                <input type="password" value="" name="password" placeholder="Haslo" id="logowanie_h" required onfocusout="sprawdz_haslo()"><br><br>
                 <p id="blad_password">gg</p>
+                
                 <input type="password" value="" name="password1" placeholder="Powtorz haslo" id="logowanie_h1" required onfocusout=""><br><br>
                 <p id="blad_password_powtorz">gg</p>
+                
                 <input type="email" value="" name="email" placeholder="Email" id="logowanie_e" required onfocusout=""><br><br>
                 <p id="blad_email">gg</p>
+                
                 <input type="name" value="" name="name" placeholder="Imie" id="logowanie_n" required onfocusout=""><br><br>
+                
                 <input type="name" value="" name="surname" placeholder="Nazwisko" id="logowanie_s" required onfocusout=""><br><br>
+                
                 <input type="date" value="" name="date-acc" id="logowanie_d" min="1950-01-01" max="2030-12-31"required onfocusout=""><br><br>
+                
                 <input type="button" value="Dalej" name="przycisk_dalej" id="przycisk_dalej_logowanie" ><br><br>
             </form>
             
