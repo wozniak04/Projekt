@@ -1,6 +1,0 @@
-Co jest gotowe:
-
-11.10.2021
--baza danych
--połączenie z bazą danych 
--system logowania
