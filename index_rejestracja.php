@@ -20,7 +20,8 @@
                 <p id="blad_username">gg</p>
                 
                 <input type="password" value="" name="password" placeholder="Haslo" id="logowanie_h" required onfocusout="sprawdz_haslo()"><br><br>
-                <p id="blad_password">gg</p>
+                <p id="blad_password">gg</p> <br>
+                
                 
                 <input type="password" value="" name="password1" placeholder="Powtorz haslo" id="logowanie_h1" required onfocusout=""><br><br>
                 <p id="blad_password_powtorz">gg</p>

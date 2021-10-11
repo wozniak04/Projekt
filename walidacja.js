@@ -3,6 +3,7 @@
 function sprawdz_haslo()
 {  
    const haslo=document.getElementById("logowanie_h").value;
+
    let duza=0;   
 
    for(var l=0;l<haslo.length;l++)
@@ -10,8 +11,9 @@ function sprawdz_haslo()
        if(haslo[l].charCodeAt() > 64 && haslo[l].charCodeAt() < 91)
            duza++;
    }
+   if(duza<1)
+        document.querySelector("#blad_password").innerHTML="Hasło powinno zawierać chociaż 1 dużą litere"   
    
-   alert(duza);
        
     
 }
