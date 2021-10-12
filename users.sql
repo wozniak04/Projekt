@@ -39,6 +39,7 @@ CREATE TABLE `users` (
   `email` text COLLATE utf8_polish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
+
 --
 -- Zrzut danych tabeli `users`
 --
