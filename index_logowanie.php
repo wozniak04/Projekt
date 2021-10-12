@@ -4,7 +4,7 @@
 	
 	if ((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true))
 	{
-		header('Location: main_index.php');
+		header('Location: index_glowna.php');
 		exit();
 	}
 
