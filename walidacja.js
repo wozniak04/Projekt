@@ -53,17 +53,20 @@ function czysc2()
 
 function sprawdzanie_czy_uzytkownik_istnieje()
 {
-   const xmlhttp = new XMLHttpRequest();
-   const mail = document.querySelector("#logowanie_e").value;
-   const wysyl = JSON.stringify({"email" : mail});
+    let y="mikiwu";
+    let x;
+    const xmlhttp = new XMLHttpRequest();
+    const user = document.querySelector("#logowanie_u").value;
+    const wysyl = JSON.stringify({"user" : user});
+    xmlhttp.onload = function () {
+            x=JSON.parse(this.response);
+            
+                
+    }
    
-   xmlhttp.onload = function(){
-   const objekt = JSON.parse(this.responseText);
-   alert(objekt)
-   }
-    xmlhttp.open("GET","sprawdzanie_user.php");
+    xmlhttp.open("GET","sprawdzanie_user.php?q="+wysyl, true);
     xmlhttp.send();
-
+    
 }
 //if(blad_haslo==false || blad_powtorz==false)
     //document.querySelector("#przycisk_dalej_logowanie").disabled=false;
