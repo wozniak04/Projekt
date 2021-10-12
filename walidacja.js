@@ -1,4 +1,4 @@
-document.querySelector("#przycisk_dalej_logowanie").disabled=true;
+//document.querySelector("#przycisk_dalej_logowanie").disabled=true;
 
 let blad_haslo=false;
 let blad_powtorz=false;
@@ -8,23 +8,16 @@ function sprawdz_haslo()
 {  
    const haslo=document.getElementById("logowanie_h").value;
 
-   let duza=0;   
-
-   for(var l=0;l<haslo.length;l++)
+   if(haslo.length<7)
    {
-       if(haslo[l].charCodeAt() > 64 && haslo[l].charCodeAt() < 91)
-           duza++;
+       document.querySelector("#blad_password").innerHTML="hasło powinno mieć conajmniej osiem znaków";
+       blad_haslo=true;
    }
-   if(duza<1)
+   else
    {
-        document.querySelector("#blad_password").innerHTML="Hasło powinno zawierać chociaż 1 dużą litere"
-        blad_haslo=true;
+       document.querySelector("#blad_password").innerHTML="";
+       blad_haslo=false;
    }
-    else if(duza>=1)
-    {
-        document.querySelector("#blad_password").innerHTML="";
-        blad_haslo=false;
-    }  
     
 }
 
@@ -58,5 +51,19 @@ function czysc2()
     document.querySelector("#logowanie_h1").value="";
 }
 
-if(blad_haslo==false || blad_powtorz==false)
-    document.querySelector("#przycisk_dalej_logowanie").disabled=false;
+function sprawdzanie_czy_uzytkownik_istnieje()
+{
+   const xmlhttp = new XMLHttpRequest();
+   const mail = document.querySelector("#logowanie_e").value;
+   const wysyl = JSON.stringify({"email" : mail});
+   
+   xmlhttp.onload = function(){
+   const objekt = JSON.parse(this.responseText);
+   alert(objekt)
+   }
+    xmlhttp.open("GET","sprawdzanie_user.php");
+    xmlhttp.send();
+
+}
+//if(blad_haslo==false || blad_powtorz==false)
+    //document.querySelector("#przycisk_dalej_logowanie").disabled=false;

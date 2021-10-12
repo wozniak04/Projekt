@@ -16,10 +16,10 @@
             <form action="register.php" method="post">
                 
                 
-                <input type="name" value="" name="Username" placeholder="Username" id="logowanie_u" required onfocusout=""><br><br>
+                <input type="name" value="" name="Username" placeholder="Username" id="logowanie_u" required onfocusout="sprawdzanie_czy_uzytkownik_istnieje()"><br><br>
                 <p id="blad_username">gg</p>
                 
-                <input type="password" value="" name="password" placeholder="Haslo" id="logowanie_h" required onfocusout="sprawdz_haslo()" onclick="czysc1()"><br><br>
+                <input type="password" value="" name="password" placeholder="Haslo" id="logowanie_h" required onkeypress="sprawdz_haslo()" onclick="czysc1()"><br><br>
                 <p id="blad_password"></p> <br>
                 
                 
@@ -35,7 +35,7 @@
                 
                 <input type="date" value="" name="date-acc" id="logowanie_d" min="0000-00-00" max="2022-12-31"required onfocusout=""><br><br>
                 
-                <input type="button" value="Dalej" name="przycisk_dalej" id="przycisk_dalej_logowanie" ><br><br>
+                <input type="button" value="Dalej" name="przycisk_dalej" id="przycisk_dalej_logowanie" onmousemove="" ><br><br>
             </form>
             
         </div>       
