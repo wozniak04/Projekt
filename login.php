@@ -4,7 +4,7 @@
 	
 	if ((!isset($_POST['login'])) || (!isset($_POST['haslo'])))
 	{
-		header('Location: index.php');
+		header('Location: index_glowna.php');
 		exit();
 	}
 
@@ -14,7 +14,7 @@
 	
 	if ($polaczenie->connect_errno!=0)
 	{
-		echo "Error: ".$polaczenie->connect_errno." Opis:".$polaczenie->connect_error;
+		echo "Error: ".$polaczenie->connect_errno."  Opis:".$polaczenie->connect_error;
 	}
 	else
 	{
@@ -47,7 +47,7 @@
 				
 				unset($_SESSION['blad']);
 				$rezultat->free_result();
-				header('Location: main_index.php');
+				header('Location: index_glowna.php');
 				
 			} else {
 				

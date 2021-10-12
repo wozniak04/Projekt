@@ -1,8 +1,8 @@
 <?php
 
-	$host = "localhost:8080";
+	$host = "localhost";
 	$db_user = "root";
 	$db_password = "";
-	$db_name = "projekt";
+	$db_name = "project";
 
 ?>
