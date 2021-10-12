@@ -8,9 +8,9 @@
             echo "<h1>.blad.</h1>";
 
 
-    $sql="SELECT username FROM users ";
-    $x ='mikiwu';
-    $jso =json_encode($x);
+    $sql="SELECT username FROM users WHERE id=1 ";
+    
+    $jso =json_encode($sql);
         
     echo $jso;
 
