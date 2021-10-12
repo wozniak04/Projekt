@@ -9,7 +9,7 @@
 
 
     $sql="SELECT username FROM users WHERE id=1 ";
-    
+    $wyniek =mysqli_query($polaczenie, $sql);
     $jso =json_encode($sql);
         
     echo $jso;
