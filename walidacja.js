@@ -60,7 +60,8 @@ function sprawdzanie_czy_uzytkownik_istnieje()
     const wysyl = JSON.stringify({"user" : user});
     xmlhttp.onload = function () {
             x=JSON.parse(this.response);
-            
+            if(x==y)
+            alert('git');
                 
     }
    
