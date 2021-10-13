@@ -12,7 +12,7 @@
 
     if($q!="")
     {
-        $sql="SELECT username FROM users WHERE username='".$q."';";
+        $sql="SELECT username FROM users WHERE username='$q';";
         $wynik = mysqli_query($polaczenie, $sql);
         while ($row = mysqli_fetch_array($wynik))
         {
