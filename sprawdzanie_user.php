@@ -12,13 +12,13 @@
 */
 
    
-        $sql="SELECT username FROM users WHERE username='$q';";
-        $wynik = mysqli_query($polaczenie, $sql);
-        while ($row = mysqli_fetch_array($wynik))
-        {
-            $jso=$row['username'];
-        }
-
+        //$sql="SELECT username FROM users WHERE username='$q';";
+        //$wynik = mysqli_query($polaczenie, $sql);
+        //while ($row = mysqli_fetch_array($wynik))
+        //{
+           // $jso=$row['username'];
+        //}
+            $jso=$q;
     echo json_encode($jso);
     
 
