@@ -63,7 +63,9 @@ function sprawdzanie_czy_uzytkownik_istnieje(user)
     
     xmlhttp.onload = function () {
             odp=JSON.parse(this.response);
-            alert(this.response);
+            // if(odp==user)
+            //     blad.innerHTML="podana nazwa uzytkownika istnieje";
+            alert(odp);
             
             
                 
