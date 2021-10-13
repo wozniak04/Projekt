@@ -1,4 +1,5 @@
 <?php
+    $jso;
     require_once "connect.php";
     $polaczenie= mysqli_connect($host, $db_user, $db_password, $db_name);
 
@@ -12,10 +13,8 @@
     $wynik = mysqli_query($polaczenie, $sql);
     while ($row = mysqli_fetch_array($wynik))
 {
-    echo json_encode($row);
+   $jso=$row['username'];
 }
-    $jso =json_encode($sql);
-        
     echo $jso;
 
 
