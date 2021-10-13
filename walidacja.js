@@ -51,12 +51,12 @@ function czysc2()
     document.querySelector("#logowanie_h1").value="";
 }
 
-function sprawdzanie_czy_uzytkownik_istnieje()
+function sprawdzanie_czy_uzytkownik_istnieje(user)
 {
     
     let odp;
     const xmlhttp = new XMLHttpRequest();
-    const user = document.querySelector("#logowanie_u").value;
+    //const user = document.querySelector("#logowanie_u").value;
     const blad=document.querySelector("#blad_username");
     
     xmlhttp.onload = function () {
