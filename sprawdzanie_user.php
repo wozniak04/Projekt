@@ -15,7 +15,8 @@
 {
    $jso=$row['username'];
 }
-    echo $jso;
+
+    echo json_encode($jso);
 
 
 ?>
