@@ -10,15 +10,16 @@
             echo "<h1>.blad.</h1>";
 */
 
-
-    $sql="SELECT username FROM users WHERE username=$q;";
-    $wynik = mysqli_query($polaczenie, $sql);
-    while ($row = mysqli_fetch_array($wynik))
-{
-   $jso=$row['username'];
-}
+    if($q1!="")
+    {
+        $sql="SELECT username FROM users WHERE username=$q;";
+        $wynik = mysqli_query($polaczenie, $sql);
+        while ($row = mysqli_fetch_array($wynik))
+        {
+            $jso=$row['username'];
+        }
 
     echo json_encode($jso);
-
+    }
 
 ?>

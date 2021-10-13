@@ -68,7 +68,7 @@ function sprawdzanie_czy_uzytkownik_istnieje()
                 
     }
    
-    xmlhttp.open("GET","sprawdzanie_user.php?q=" + user, true);
+    xmlhttp.open("GET","sprawdzanie_user.php?q=" + user);
     xmlhttp.send();
     
 }
