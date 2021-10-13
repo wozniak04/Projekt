@@ -1,15 +1,15 @@
 <?php
     require_once "connect.php";
-    $polaczenie= new mysqli($host, $db_user, $db_password, $db_name);
+    $polaczenie= mysqli_connect($host, $db_user, $db_password, $db_name);
 
-        if($polaczenie)
+        if(mysqli_connect_errno())
             echo '<h1>git</h1>';
         else
             echo "<h1>.blad.</h1>";
 
 
     $sql="SELECT username FROM users WHERE id=1 ";
-    $wyniek =mysqli_query($polaczenie, $sql);
+    $wyniek = mysqli_query($polaczenie, $sql);
     $jso =json_encode($sql);
         
     echo $jso;
