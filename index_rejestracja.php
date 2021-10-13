@@ -17,7 +17,7 @@
                 
                 
                 <input type="name" value="" name="Username" placeholder="Username" id="logowanie_u" required onfocusout="sprawdzanie_czy_uzytkownik_istnieje(this.value)"><br><br>
-                <p id="blad_username">gg</p>
+                <p id="blad_username"></p>
                 
                 <input type="password" value="" name="password" placeholder="Haslo" id="logowanie_h" required onkeypress="sprawdz_haslo()" onclick="czysc1()"><br><br>
                 <p id="blad_password"></p> <br>
