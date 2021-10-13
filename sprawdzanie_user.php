@@ -1,6 +1,6 @@
 <?php
     $jso=null;
-    $q = $_REQUEST['q'];
+    $q = $_REQUEST["q"];
     
     require_once "connect.php";
     $polaczenie= mysqli_connect($host, $db_user, $db_password, $db_name);

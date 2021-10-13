@@ -60,6 +60,7 @@ function sprawdzanie_czy_uzytkownik_istnieje(user)
     const xmlhttp = new XMLHttpRequest();
     //const user = document.querySelector("#logowanie_u").value;
     const blad=document.querySelector("#blad_username");
+    user=JSON.stringify(user);
     
     xmlhttp.onload = function () {
             odp=JSON.parse(this.response);
@@ -71,7 +72,7 @@ function sprawdzanie_czy_uzytkownik_istnieje(user)
                 
     }
    
-    xmlhttp.open("GET","sprawdzanie_user.php?q=" + user);
+    xmlhttp.open("GET","sprawdzanie_user.php?q=" + user,true);
     xmlhttp.send();
     
 }
