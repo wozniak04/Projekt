@@ -9,7 +9,11 @@
 
 
     $sql="SELECT username FROM users WHERE id=1 ";
-    $wyniek = mysqli_query($polaczenie, $sql);
+    $wynik = mysqli_query($polaczenie, $sql);
+    while ($row = mysqli_fetch_array($wynik))
+{
+    echo json_encode($row);
+}
     $jso =json_encode($sql);
         
     echo $jso;
