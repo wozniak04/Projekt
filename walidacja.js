@@ -53,19 +53,22 @@ function czysc2()
 
 function sprawdzanie_czy_uzytkownik_istnieje()
 {
-    let y="mikiwu";
-    let x;
+    
+    let odp;
     const xmlhttp = new XMLHttpRequest();
     const user = document.querySelector("#logowanie_u").value;
-    const wysyl = JSON.stringify({"user" : user});
+    const blad=document.querySelector("#blad_username");
+    
     xmlhttp.onload = function () {
-            x=JSON.parse(this.response);
-            alert(x);
+            odp=JSON.parse(this.response);
+            if(odp==user)
+                blad.innerHTML="podana nazwa uzytkownika istnieje";
+            
             
                 
     }
    
-    xmlhttp.open("GET","sprawdzanie_user.php?q="+wysyl, true);
+    xmlhttp.open("GET","sprawdzanie_user.php?q=" + user, true);
     xmlhttp.send();
     
 }
