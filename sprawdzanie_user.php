@@ -10,7 +10,7 @@
             echo "<h1>.blad.</h1>";
 */
 
-    if($q1!="")
+    if($q!="")
     {
         $sql="SELECT username FROM users WHERE username=$q;";
         $wynik = mysqli_query($polaczenie, $sql);
