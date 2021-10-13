@@ -53,7 +53,9 @@ function czysc2()
 
 function sprawdzanie_czy_uzytkownik_istnieje(user)
 {
-    
+    var script = document.createElement('script');
+    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js';
+    document.getElementsByTagName('head')[0].appendChild(script);
     let odp;
     const xmlhttp = new XMLHttpRequest();
     //const user = document.querySelector("#logowanie_u").value;
