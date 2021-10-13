@@ -63,7 +63,7 @@ function sprawdzanie_czy_uzytkownik_istnieje(user)
     
     xmlhttp.onload = function () {
             odp=JSON.parse(this.response);
-            alert(JSON);
+            alert(this.response);
             
             
                 
