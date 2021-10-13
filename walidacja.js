@@ -53,9 +53,9 @@ function czysc2()
 
 function sprawdzanie_czy_uzytkownik_istnieje(user)
 {
-    var script = document.createElement('script');
-    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js';
-    document.getElementsByTagName('head')[0].appendChild(script);
+    // var script = document.createElement('script');
+    // script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js';
+    // document.getElementsByTagName('head')[0].appendChild(script);
     let odp;
     const xmlhttp = new XMLHttpRequest();
     //const user = document.querySelector("#logowanie_u").value;
@@ -63,9 +63,15 @@ function sprawdzanie_czy_uzytkownik_istnieje(user)
     
     xmlhttp.onload = function () {
             odp=JSON.parse(this.response);
-            // if(odp==user)
-            //     blad.innerHTML="podana nazwa uzytkownika istnieje";
-            alert(odp);
+            //tutaj tak jakby odp i user było tą samą wartością, tak mi się wydaje spróbuj dać odp != user. Wtedy tylko drugi warunek działa
+            if(odp == user)
+                blad.innerHTML="Podana nazwa użytkownika już istnieje";
+            // else if(odp == "")
+            //     blad.innerHTML="Nie może być puste";
+            
+
+
+
             
             
                 

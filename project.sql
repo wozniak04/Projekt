@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 11 Paź 2021, 13:34
+-- Czas generowania: 13 Paź 2021, 20:32
 -- Wersja serwera: 10.4.21-MariaDB
 -- Wersja PHP: 8.0.10
 
@@ -39,7 +39,6 @@ CREATE TABLE `users` (
   `email` text COLLATE utf8_polish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
-
 --
 -- Zrzut danych tabeli `users`
 --
@@ -59,7 +58,8 @@ INSERT INTO `users` (`id`, `username`, `password`, `created_at`, `admin`, `name`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `username` (`username`);
+  ADD UNIQUE KEY `username` (`username`),
+  ADD UNIQUE KEY `username_2` (`username`);
 
 --
 -- AUTO_INCREMENT dla zrzuconych tabel
