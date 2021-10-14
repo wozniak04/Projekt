@@ -152,3 +152,19 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
 }
+
+#blad_nazwisko{
+    position: absolute;
+    left: 54%;
+    top: 50%;
+    font-size: x-small;
+    color: red;
+}
+
+#blad_imie{
+    position: absolute;
+    left: 54%;
+    top: 60%;
+    font-size: x-small;
+    color: red;
+}
