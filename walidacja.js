@@ -1,7 +1,6 @@
-//document.querySelector("#przycisk_dalej_logowanie").disabled=true;
 
-let blad_haslo=false;
-let blad_powtorz=false;
+const wysli=document.querySelector("#przycisk_dalej_logowanie");
+wysli.disabled=true;
 
 
 function sprawdz_haslo()
@@ -11,12 +10,13 @@ function sprawdz_haslo()
    if(haslo.length<7)
    {
        document.querySelector("#blad_password").innerHTML="hasło powinno mieć conajmniej osiem znaków";
-       blad_haslo=true;
+       
    }
    else
    {
        document.querySelector("#blad_password").innerHTML="";
-       blad_haslo=false;
+       
+       odb();
    }
     
 }
@@ -31,14 +31,14 @@ function porownanie()
         if(haslo1 != haslo2)
         {
             document.querySelector("#blad_password_powtorz").innerHTML="podane hasło są różne";
-            blad_powtorz=true;
+            
         }
         if(haslo1 == haslo2)
         {
-            document.querySelector("#blad_password_powtorz").innerHTML="";
-            blad_powtorz=false;
+            odb();
         }
     }
+    
 }
 
 function czysc1()
@@ -64,13 +64,17 @@ function sprawdzanie_czy_uzytkownik_istnieje()
             if(odp==user)
                 blad.innerHTML="podana nazwa uzytkownika istnieje";
              else
+             {
                 blad.innerHTML = "";
-    }
+                odb()
+             }
+            }
     
     xmlhttp.open("GET","sprawdzanie_user.php?q=" + user,true);
     xmlhttp.send();
     
 }
+
 function sprawdzanie_email()
 {   var mal=0;
     let poprawnye=true;
@@ -104,13 +108,23 @@ function sprawdzanie_email()
             if(odp==email)
                 blad_e.innerHTML="podany email istnieje";
             else
+            {
                 blad_e.innerHTML = "";
-    }
-
+                odb()
+            }
+       }
         xmlhttp.open("GET","sprawdzanie_email.php?q=" + email,true);
         xmlhttp.send();
     }
 
 }
-//if(blad_haslo==false || blad_powtorz==false)
-    //document.querySelector("#przycisk_dalej_logowanie").disabled=false;
+function odb()
+{   
+    const haslo=document.querySelector("#blad_password").value;
+    const powtorz=document.querySelector("#blad_password_powtorz").value;
+    const uzytkownik=document.querySelector("#blad_username").value;
+    const email=document.querySelector("#blad_email").value;
+    
+    if(haslo==undefined && powtorz==undefined && uzytkownik==undefined &&email==undefined)
+        wysli.disabled=false
+}
