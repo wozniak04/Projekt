@@ -29,11 +29,11 @@
                 <p id="blad_email">email powinien posiadać 6 liter przed @</p>
                 
                 <input type="name" value="" name="name" placeholder="Imie" id="logowanie_n" required onfocusout="imie()"><br><br>
-                
+                <p id="blad_imie">wpisz imie</p>
                 <input type="name" value="" name="surname" placeholder="Nazwisko" id="logowanie_s" required onfocusout="nazwisko()"><br><br>
                 
                 <input type="date" value="" name="date-acc" id="logowanie_d" min="0000-00-00" max="2022-12-31"required onfocusout=""><br><br>
-                
+                <p id="blad_nazwisko">wpisz nazwisko</p>
                 
                 
                 <input type="button" value="Dalej" name="przycisk_dalej" id="przycisk_dalej_logowanie" ><br><br>
