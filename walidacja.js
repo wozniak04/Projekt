@@ -23,8 +23,6 @@ function sprawdz_haslo()
 
 function porownanie()
 {   
-    if(blad_haslo == false)
-    {
         const haslo1=document.querySelector("#logowanie_h").value;
         const haslo2=document.querySelector("#logowanie_h1").value;
         
@@ -38,8 +36,6 @@ function porownanie()
             document.querySelector("#blad_password_powtorz").innerHTML="";
             odb();
         }
-    }
-    
 }
 
 function czysc1()
