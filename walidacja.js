@@ -23,8 +23,6 @@ function sprawdz_haslo()
 
 function porownanie()
 {   
-    if(blad_haslo == false)
-    {
         const haslo1=document.querySelector("#logowanie_h").value;
         const haslo2=document.querySelector("#logowanie_h1").value;
         
@@ -38,8 +36,6 @@ function porownanie()
             document.querySelector("#blad_password_powtorz").innerHTML="";
             odb();
         }
-    }
-    
 }
 
 function czysc1()
@@ -67,7 +63,7 @@ function sprawdzanie_czy_uzytkownik_istnieje()
              else
              {
                 blad.innerHTML = "";
-                odb()
+                odb();
              }
             }
     
@@ -89,7 +85,7 @@ function sprawdzanie_email()
             
     }
 
-    if(mal<=6)
+    if(mal<=5)
     {
         blad_e.innerHTML="nie poprawny email";
         poprawnye=false;
@@ -111,7 +107,7 @@ function sprawdzanie_email()
             else
             {
                 blad_e.innerHTML = "";
-                odb()
+                odb();
             }
        }
         xmlhttp.open("GET","sprawdzanie_email.php?q=" + email,true);
@@ -123,34 +119,34 @@ function sprawdzanie_email()
 function imie()
 {
     const imie=document.querySelector("#logowanie_n").value;
-    const blad=document.querySelector("#blad_imie").value;
+    const blad=document.querySelector("#blad_imie");
     if(imie=="")
         blad.innerHTML="podaj imie";
     else
     {
-        blad.innerHTML="";
-        odp();
+        blad.innerHTML= "";
+        odb();
     }
 }
 
 function nazwisko()
 {
     const nazwisko=document.querySelector("#logowanie_s").value;
-    const blad=document.querySelector("#blad_nazwisko").value;
+    const blad=document.querySelector("#blad_nazwisko");
     
     if(nazwisko=="")
         blad.innerHTML="podaj imie";
     
     else
     {
-        blad.innerHTML="";
-        odp();
+        blad.innerHTML= "";
+        odb();
     }
 
 }
 function odb()
 {   
-    const imie=document.querySelector("#blad_name").value;
+    const imie=document.querySelector("#blad_imie").value;
     const nazwisko=document.querySelector("#blad_nazwisko").value;
     const haslo=document.querySelector("#blad_password").value;
     const powtorz=document.querySelector("#blad_password_powtorz").value;

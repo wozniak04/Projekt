@@ -36,7 +36,7 @@
                 
                 
                 
-                <input type="button" value="Dalej" name="przycisk_dalej" id="przycisk_dalej_logowanie" onmouseover="test()" ><br><br>
+                <input type="button" value="Dalej" name="przycisk_dalej" id="przycisk_dalej_logowanie" onmouseover="" ><br><br>
             </form>
             <div id="form_checkbox">
                 <form action="" >
