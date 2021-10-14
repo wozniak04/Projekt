@@ -119,12 +119,12 @@ function sprawdzanie_email()
 function imie()
 {
     const imie=document.querySelector("#logowanie_n").value;
-    const blad=document.querySelector("#blad_imie").value;
+    const blad=document.querySelector("#blad_imie");
     if(imie=="")
         blad.innerHTML="podaj imie";
     else
     {
-        blad.innerHTML="";
+        blad.innerHTML= "";
         odp();
     }
 }
@@ -132,14 +132,14 @@ function imie()
 function nazwisko()
 {
     const nazwisko=document.querySelector("#logowanie_s").value;
-    const blad=document.querySelector("#blad_nazwisko").value;
+    const blad=document.querySelector("#blad_nazwisko");
     
     if(nazwisko=="")
         blad.innerHTML="podaj imie";
     
     else
     {
-        blad.innerHTML="";
+        blad.innerHTML= "";
         odp();
     }
 
