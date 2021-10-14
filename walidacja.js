@@ -34,7 +34,8 @@ function porownanie()
             
         }
         if(haslo1 == haslo2)
-        {
+        {   
+            document.querySelector("#blad_password_powtorz").innerHTML="";
             odb();
         }
     }
@@ -118,13 +119,44 @@ function sprawdzanie_email()
     }
 
 }
+
+function imie()
+{
+    const imie=document.querySelector("#logowanie_n").value;
+    const blad=document.querySelector("#blad_imie").value;
+    if(imie=="")
+        blad.innerHTML="podaj imie";
+    else
+    {
+        blad.innerHTML="";
+        odp();
+    }
+}
+
+function nazwisko()
+{
+    const nazwisko=document.querySelector("#logowanie_s").value;
+    const blad=document.querySelector("#blad_nazwisko").value;
+    
+    if(nazwisko=="")
+        blad.innerHTML="podaj imie";
+    
+    else
+    {
+        blad.innerHTML="";
+        odp();
+    }
+
+}
 function odb()
 {   
+    const imie=document.querySelector("#blad_name").value;
+    const nazwisko=document.querySelector("#blad_nazwisko").value;
     const haslo=document.querySelector("#blad_password").value;
     const powtorz=document.querySelector("#blad_password_powtorz").value;
     const uzytkownik=document.querySelector("#blad_username").value;
     const email=document.querySelector("#blad_email").value;
     
-    if(haslo==undefined && powtorz==undefined && uzytkownik==undefined &&email==undefined)
+    if(haslo==undefined && powtorz==undefined && uzytkownik==undefined && email==undefined && imie==undefined && nazwisko==undefined )
         wysli.disabled=false
 }
