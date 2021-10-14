@@ -67,8 +67,8 @@
     position: absolute;
     margin: -100px 0 0 -150px;
     top: 85%;
-    left: 60%;
-    width: 200px;
+    left: 35%;
+    width: 202px;
     height: 30px;
 }
 
@@ -140,4 +140,15 @@
     top: 40%;
     font-size: x-small;
     color: red;
+}
+
+#form_checkbox{
+    position: absolute;
+    margin: -100px 0 0 -150px;
+    top: 85%;
+    left: 84%;
+    width: 200px;
+    height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
 }
