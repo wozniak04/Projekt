@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 13 Paź 2021, 20:32
+-- Czas generowania: 14 Paź 2021, 12:18
 -- Wersja serwera: 10.4.21-MariaDB
 -- Wersja PHP: 8.0.10
 
@@ -36,18 +36,19 @@ CREATE TABLE `users` (
   `name` text COLLATE utf8_polish_ci NOT NULL,
   `surname` text COLLATE utf8_polish_ci NOT NULL,
   `date_born` date DEFAULT curdate(),
-  `email` text COLLATE utf8_polish_ci NOT NULL
+  `email` text COLLATE utf8_polish_ci NOT NULL,
+  `gender` text COLLATE utf8_polish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
 -- Zrzut danych tabeli `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `created_at`, `admin`, `name`, `surname`, `date_born`, `email`) VALUES
-(1, 'Arek', 'Arecki23', '2021-10-10 19:37:53', 1, 'Arek', 'Guth', '2004-04-23', 'arkadiuszguth@gmail.com'),
-(2, 'Mikołaj', 'Wozniacki04', '2021-10-10 19:37:53', 1, 'Mikołaj', 'Woźniak', '2004-11-19', 'mikimen321@gmail.com'),
-(3, 'Kacper', 'Bigguizzo', '2021-10-10 19:37:53', 1, 'Kacper', 'Paszki', '2005-09-16', 'kontakt1kacper@gmail.com'),
-(4, 'Jan', 'Posadzki', '2021-10-10 19:45:16', 0, '', '', '2021-10-11', '');
+INSERT INTO `users` (`id`, `username`, `password`, `created_at`, `admin`, `name`, `surname`, `date_born`, `email`, `gender`) VALUES
+(1, 'Arek', 'Arecki23', '2021-10-10 19:37:53', 1, 'Arek', 'Guth', '2004-04-23', 'arkadiuszguth@gmail.com', 'm'),
+(2, 'Mikołaj', 'Wozniacki04', '2021-10-10 19:37:53', 1, 'Mikołaj', 'Woźniak', '2004-11-19', 'mikimen321@gmail.com', 'm'),
+(3, 'Kacper', 'Bigguizzo', '2021-10-10 19:37:53', 1, 'Kacper', 'Paszki', '2005-09-16', 'kontakt1kacper@gmail.com', 'm'),
+(4, 'Jan', 'Posadzki', '2021-10-10 19:45:16', 0, '', '', '2021-10-11', '', 'm');
 
 --
 -- Indeksy dla zrzutów tabel
