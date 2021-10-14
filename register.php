@@ -9,22 +9,22 @@ $name_ = $_POST['name'];
 $surname_ = $_POST['surname'];
 $email_ = $_POST['email'];
 $date_born_ = $_POST['date-acc'];
-$gender_ = $_POST['gender'];
+//$gender_ = $_POST['gender'];
 
 
 
-	$zapytanie = "INSERT INTO users
-	(`id`, `username`, `password`, `created_at`, `admin`, `name`, `surname`, `date_born`, `email`, `gender`) 
-	VALUES 
-	('','$username_','$password_','','$name','$surname','$date_born_','$email','$gender')";
+	$zapytanie = @mysql_query("INSERT INTO users
+	SET
+	username='$username_', password = '$password_', name='$name', surname='$surname',date_born='$date_born_',email='$email'");
 		
-		$wynik = mysql_query($zapytanie);
+		//$wynik = mysql_query($zapytanie);
 		
-	 	if ($wynik) {
-	 		header('Location: index_glowna.php');	
-	 	}
+	 	// if ($wynik) {
+	 	// 	header('Location: index_glowna.php');	
+	 	// }
 	 
-	 	mysql_close($db);	
+	 	// mysql_close($db);	
+		 //(`username`, `password`, `admin`, `name`, `surname`, `date_born`, `email`, `gender`) 
 	
 
 ?>
