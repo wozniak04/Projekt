@@ -51,22 +51,20 @@ function czysc2()
     document.querySelector("#logowanie_h1").value="";
 }
 
-function sprawdzanie_czy_uzytkownik_istnieje(user)
+function sprawdzanie_czy_uzytkownik_istnieje()
 {
-    var script = document.createElement('script');
-    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js';
-    document.getElementsByTagName('head')[0].appendChild(script);
+    
     let odp;
     const xmlhttp = new XMLHttpRequest();
-    //const user = document.querySelector("#logowanie_u").value;
+    const user = document.querySelector("#logowanie_u").value;
     const blad=document.querySelector("#blad_username");
-    user=JSON.stringify(user);
+    // user=JSON.stringify(Usser);
     
     xmlhttp.onload = function () {
             odp=JSON.parse(this.response);
             // if(odp==user)
             //     blad.innerHTML="podana nazwa uzytkownika istnieje";
-            alert(odp);
+            alert(odp+ " " + user);
             
             
                 

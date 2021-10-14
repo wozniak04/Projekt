@@ -1,5 +1,5 @@
 <?php
-    $jso=null;
+    $jso="";
     $q = $_REQUEST['q'];
     require_once "connect.php";
     $polaczenie= mysqli_connect($host, $db_user, $db_password, $db_name);
@@ -13,7 +13,7 @@
         {
            $jso=$row['username'];
         }
-            $jso=$q;
+            // $jso=$q;
     echo json_encode($jso);
 
 
