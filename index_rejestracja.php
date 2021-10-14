@@ -26,7 +26,7 @@
                 <input type="password" value="" name="password1" placeholder="Powtorz haslo" id="logowanie_h1" required onfocusout="porownanie()" onclick="czysc2()"><br><br>
                 <p id="blad_password_powtorz"></p>
                 
-                <input type="email" value="" name="email" placeholder="Email" id="logowanie_e" required onfocusout=""><br><br>
+                <input type="email" value="" name="email" placeholder="Email" id="logowanie_e" required onfocusout="sprawdzanie_email()"><br><br>
                 <p id="blad_email">gg</p>
                 
                 <input type="name" value="" name="name" placeholder="Imie" id="logowanie_n" required onfocusout=""><br><br>

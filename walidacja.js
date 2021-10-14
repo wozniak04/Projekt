@@ -58,7 +58,6 @@ function sprawdzanie_czy_uzytkownik_istnieje()
     const xmlhttp = new XMLHttpRequest();
     const user = document.querySelector("#logowanie_u").value;
     const blad=document.querySelector("#blad_username");
-    // user=JSON.stringify(Usser);
     
     xmlhttp.onload = function () {
             odp=JSON.parse(this.response);
@@ -71,6 +70,47 @@ function sprawdzanie_czy_uzytkownik_istnieje()
     xmlhttp.open("GET","sprawdzanie_user.php?q=" + user,true);
     xmlhttp.send();
     
+}
+function sprawdzanie_email()
+{   var mal=0;
+    let poprawnye=true;
+    const email=document.querySelector("#logowanie_e").value;
+    const blad_e=document.querySelector("#blad_email");
+    
+    for(var i=0;i<email.length;i++)
+    {
+        if(email[i]=='@')
+            mal=i;
+            
+    }
+
+    if(mal<=6)
+    {
+        blad_e.innerHTML="nie poprawny email";
+        poprawnye=false;
+    }
+    else
+    {
+        blad_e.innerHTML="";
+        poprawnye=true;
+    }
+
+    if(poprawnye==true)
+    {   
+        let odp;
+        const xmlhttp = new XMLHttpRequest();
+        xmlhttp.onload = function () {
+            odp=JSON.parse(this.response);
+            if(odp==email)
+                blad.innerHTML="podany email istnieje";
+            else
+                blad.innerHTML = "";
+    }
+
+        xmlhttp.open("GET","sprawdzanie_email.php?q=" + email,true);
+        xmlhttp.send();
+    }
+
 }
 //if(blad_haslo==false || blad_powtorz==false)
     //document.querySelector("#przycisk_dalej_logowanie").disabled=false;
