@@ -85,7 +85,7 @@ function sprawdzanie_email()
             
     }
 
-    if(mal<=6)
+    if(mal<=5)
     {
         blad_e.innerHTML="nie poprawny email";
         poprawnye=false;
