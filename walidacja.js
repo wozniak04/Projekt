@@ -63,7 +63,7 @@ function sprawdzanie_czy_uzytkownik_istnieje()
              else
              {
                 blad.innerHTML = "";
-                odb()
+                odb();
              }
             }
     
@@ -107,7 +107,7 @@ function sprawdzanie_email()
             else
             {
                 blad_e.innerHTML = "";
-                odb()
+                odb();
             }
        }
         xmlhttp.open("GET","sprawdzanie_email.php?q=" + email,true);
@@ -125,7 +125,7 @@ function imie()
     else
     {
         blad.innerHTML= "";
-        odp();
+        odb();
     }
 }
 
@@ -140,7 +140,7 @@ function nazwisko()
     else
     {
         blad.innerHTML= "";
-        odp();
+        odb();
     }
 
 }
