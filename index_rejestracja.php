@@ -40,9 +40,9 @@
             </form>
             <div id="form_checkbox">
                 <form action="" >
-                    <input type="checkbox" id="kobieta_box" name="" value="Kobieta">
+                    <input type="radio" id="kobieta_box" name="gender" value="Kobieta">
                     <label for="kobieta"> Kobieta</label><br>
-                    <input type="checkbox" id="mezczyzna_box" name="" value="Kobieta">
+                    <input type="radio" id="mezczyzna_box" name="gender" value="Kobieta">
                     <label for="mezczyzna_box"> Mezczyzna</label><br>
                 </form>
             </div>
