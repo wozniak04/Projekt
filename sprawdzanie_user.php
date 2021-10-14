@@ -19,9 +19,5 @@
     echo json_encode($jso);
 
 
-
-
-    
-    
-
+    $polaczenie->close();
 ?>
