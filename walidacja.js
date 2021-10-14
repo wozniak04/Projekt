@@ -146,7 +146,7 @@ function nazwisko()
 }
 function odb()
 {   
-    const imie=document.querySelector("#blad_name").value;
+    const imie=document.querySelector("#blad_imie").value;
     const nazwisko=document.querySelector("#blad_nazwisko").value;
     const haslo=document.querySelector("#blad_password").value;
     const powtorz=document.querySelector("#blad_password_powtorz").value;
