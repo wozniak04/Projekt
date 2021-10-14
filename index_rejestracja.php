@@ -27,7 +27,7 @@
                 <p id="blad_password_powtorz"></p>
                 
                 <input type="email" value="" name="email" placeholder="Email" id="logowanie_e" required onfocusout="sprawdzanie_email()"><br><br>
-                <p id="blad_email">gg</p>
+                <p id="blad_email"></p>
                 
                 <input type="name" value="" name="name" placeholder="Imie" id="logowanie_n" required onfocusout=""><br><br>
                 

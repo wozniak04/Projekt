@@ -102,9 +102,9 @@ function sprawdzanie_email()
         xmlhttp.onload = function () {
             odp=JSON.parse(this.response);
             if(odp==email)
-                blad.innerHTML="podany email istnieje";
+                blad_e.innerHTML="podany email istnieje";
             else
-                blad.innerHTML = "";
+                blad_e.innerHTML = "";
     }
 
         xmlhttp.open("GET","sprawdzanie_email.php?q=" + email,true);
