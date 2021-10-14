@@ -3,12 +3,12 @@
 require_once "connect.php";
 require_once "";
 
-$username_ = $_POST['username'];
-$password_ = $_POST['password'];
-$name_ = $_POST['name'];
-$surname_ = $_POST['surnname'];
-$email_ = $_POST['email'];
-$date_born_ = $_POST['date_born'];
+// $username_ = $_POST['username'];
+// $password_ = $_POST['password'];
+// $name_ = $_POST['name'];
+// $surname_ = $_POST['surnname'];
+// $email_ = $_POST['email'];
+// $date_born_ = $_POST['date_born'];
 
 
 

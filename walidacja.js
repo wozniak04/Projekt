@@ -62,14 +62,12 @@ function sprawdzanie_czy_uzytkownik_istnieje()
     
     xmlhttp.onload = function () {
             odp=JSON.parse(this.response);
-            // if(odp==user)
-            //     blad.innerHTML="podana nazwa uzytkownika istnieje";
-            alert(odp+ " " + user);
-            
-            
-                
+            if(odp==user)
+                blad.innerHTML="podana nazwa uzytkownika istnieje";
+             else
+                blad.innerHTML = "";
     }
-   
+    
     xmlhttp.open("GET","sprawdzanie_user.php?q=" + user,true);
     xmlhttp.send();
     
