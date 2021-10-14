@@ -34,7 +34,7 @@
                 <p id="blad_nazwisko">wpisz nazwisko</p>
                 <input type="date" value="" name="date-acc" id="logowanie_d" min="0000-00-00" max="2022-12-31"required onfocusout=""><br><br>
                 
-                <input type="button" value="Dalej" name="przycisk_dalej" id="przycisk_dalej_logowanie" onmouseover="test()" ><br><br>
+                <input type="button" value="Dalej" name="przycisk_dalej" id="przycisk_dalej_logowanie" onmouseover="" ><br><br>
             </form>
             
         </div>       
