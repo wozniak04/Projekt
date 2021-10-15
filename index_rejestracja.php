@@ -42,7 +42,7 @@
                 
                     <input type="radio" id="kobieta_box" name="gender" value="Kobieta">
                     <label for="kobieta"> Kobieta</label><br>
-                    <input type="radio" id="mezczyzna_box" name="gender" value="Kobieta">
+                    <input type="radio" id="mezczyzna_box" name="gender" value="Mezczyzna">
                     <label for="mezczyzna_box"> Mezczyzna</label><br>
                 
                 </div>
