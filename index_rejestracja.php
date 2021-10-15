@@ -37,16 +37,16 @@
                 
                 
                 <input type="submit" value="Dalej" name="przycisk_dalej" id="przycisk_dalej_logowanie" ><br><br>
-            </form>
-            <div id="form_checkbox">
-                <form action="" >
+            
+                <div id="form_checkbox">
+                
                     <input type="radio" id="kobieta_box" name="gender" value="Kobieta">
                     <label for="kobieta"> Kobieta</label><br>
                     <input type="radio" id="mezczyzna_box" name="gender" value="Kobieta">
                     <label for="mezczyzna_box"> Mezczyzna</label><br>
-                </form>
-            </div>
-            
+                
+                </div>
+            </form>
             
         </div>       
     </main>
