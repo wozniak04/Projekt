@@ -1,3 +1,14 @@
+<?php
+
+	session_start();
+	
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index_logowanie.php');
+		exit();
+	}
+	
+?>
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="style/">
