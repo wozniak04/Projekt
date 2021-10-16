@@ -30,9 +30,11 @@
                 
                 <input type="text" value="" name="name" placeholder="Imie" id="logowanie_n" required onfocusout="imie()"><br><br>
                 <p id="blad_imie">wpisz imie</p>
+
                 <input type="text" value="" name="surname" placeholder="Nazwisko" id="logowanie_s" required onfocusout="nazwisko()"><br><br>
                 <p id="blad_nazwisko">wpisz nazwisko</p>
-                <input type="date" value="" name="date-acc" id="logowanie_d" min="1900-01-01" max="2021-12-31"required onfocusout=""><br><br>
+                
+                <input type="date" value="" name="date-acc" id="logowanie_d" min="1900-01-01" max="2021-12-31" required onfocusout=""><br><br>
                 
                 
                 
