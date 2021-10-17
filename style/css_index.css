@@ -55,7 +55,7 @@
     width: 200px;
     height: 30px;
 }
-#logowanie_s {
+#logowanie_n {
     position: absolute;
     margin: -100px 0 0 -150px;
     top: 75%;
@@ -81,7 +81,7 @@
     height: 30px;
 }
 
- #logowanie_n{
+ #logowanie_s{
     position: absolute;
     margin: -100px 0 0 -150px;
     top: 65%;
