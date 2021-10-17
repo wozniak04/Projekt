@@ -16,7 +16,7 @@
             <form action="register.php" method="post">
                 
                 
-                <input type="text" value="" name="Username" placeholder="Username" id="logowanie_u" required onfocusout="sprawdzanie_czy_uzytkownik_istnieje()"><br><br>
+                <input type="text" value="" name="Username" placeholder="Nazwa Uzytkownika" id="logowanie_u" required onfocusout="sprawdzanie_czy_uzytkownik_istnieje()"><br><br>
                 <p id="blad_username">wprowadź nazwe użytkownika</p>
                 
                 <input type="password" value="" name="password" placeholder="Haslo" id="logowanie_h" required onkeypress="sprawdz_haslo()" onclick="czysc1()"><br><br>
