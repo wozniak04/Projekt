@@ -1,6 +1,7 @@
 
 const wysli=document.querySelector("#przycisk_dalej_logowanie");
 wysli.disabled=true;
+var g=0;
 
 
 function sprawdz_haslo()
@@ -135,7 +136,7 @@ function nazwisko()
     const blad=document.querySelector("#blad_nazwisko");
     
     if(nazwisko=="")
-        blad.innerHTML="podaj imie";
+        blad.innerHTML="podaj nazwisko";
     
     else
     {
@@ -144,15 +145,33 @@ function nazwisko()
     }
 
 }
+
+function wybor(wyb)
+{
+    odb()
+}
+
+function data(date)
+{
+    alert(date);
+
+}
+
 function odb()
 {   
-    const imie=document.querySelector("#blad_imie").value;
+    g++;
+    let imie=document.querySelector("#blad_imie").value;
     const nazwisko=document.querySelector("#blad_nazwisko").value;
     const haslo=document.querySelector("#blad_password").value;
     const powtorz=document.querySelector("#blad_password_powtorz").value;
     const uzytkownik=document.querySelector("#blad_username").value;
     const email=document.querySelector("#blad_email").value;
+    const wyb1=document.querySelector("#kobieta_box").value;
+    const wyb2=document.querySelector("#mezczyzna_box").value;
+    const dat=document.querySelector("#logowanie_d").value;
+
     
-    if(haslo==undefined && powtorz==undefined && uzytkownik==undefined && email==undefined && imie==undefined && nazwisko==undefined )
+    
+    if(g>=8 && haslo==undefined && powtorz==undefined && uzytkownik==undefined && email==undefined && imie==undefined && nazwisko==undefined &&(wyb1=="Kobieta"||wyb2=="Mezczyzna")&&dat!="" )
         wysli.disabled=false
 }

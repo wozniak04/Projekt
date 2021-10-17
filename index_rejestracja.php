@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="pl">
 <head>
     <link rel="stylesheet" type="text/css" href="style/css_index.css">
     <title>eApteka - Rejestracja na strone</title>
@@ -34,7 +35,7 @@
                 <input type="text" value="" name="surname" placeholder="Nazwisko" id="logowanie_s" required onfocusout="nazwisko()"><br><br>
                 <p id="blad_nazwisko">wpisz nazwisko</p>
                 
-                <input type="date" value="" name="date-acc" id="logowanie_d" min="1900-01-01" max="2021-12-31" required onfocusout=""><br><br>
+                <input type="date" value="" name="date-acc" id="logowanie_d" min="1900-01-01" max="2021-12-31" required onfocusout="data(this.value)"><br><br>
                 
                 
                 
@@ -42,9 +43,9 @@
             
                 <div id="form_checkbox">
                 
-                    <input type="radio" id="kobieta_box" name="gender" value="Kobieta">
+                    <input type="radio" id="kobieta_box" name="gender" value="Kobieta" onclick="wybor(this.value)">
                     <label for="kobieta"> Kobieta</label><br>
-                    <input type="radio" id="mezczyzna_box" name="gender" value="Mezczyzna">
+                    <input type="radio" id="mezczyzna_box" name="gender" value="Mezczyzna" onclick="wybor(this.value)">
                     <label for="mezczyzna_box"> Mezczyzna</label><br>
                 
                 </div>
@@ -54,3 +55,4 @@
     </main>
     <script src="walidacja.js"></script>
 </body>
+</html>
