@@ -1,7 +1,6 @@
 
 const wysli=document.querySelector("#przycisk_dalej_logowanie");
 wysli.disabled=true;
-var g=0;
 
 
 function sprawdz_haslo()
@@ -24,6 +23,8 @@ function sprawdz_haslo()
 
 function porownanie()
 {   
+    if(blad_haslo == false)
+    {
         const haslo1=document.querySelector("#logowanie_h").value;
         const haslo2=document.querySelector("#logowanie_h1").value;
         
@@ -33,10 +34,11 @@ function porownanie()
             
         }
         if(haslo1 == haslo2)
-        {   
-            document.querySelector("#blad_password_powtorz").innerHTML="";
+        {
             odb();
         }
+    }
+    
 }
 
 function czysc1()
@@ -64,7 +66,7 @@ function sprawdzanie_czy_uzytkownik_istnieje()
              else
              {
                 blad.innerHTML = "";
-                odb();
+                odb()
              }
             }
     
@@ -86,7 +88,7 @@ function sprawdzanie_email()
             
     }
 
-    if(mal<=5)
+    if(mal<=6)
     {
         blad_e.innerHTML="nie poprawny email";
         poprawnye=false;
@@ -108,7 +110,7 @@ function sprawdzanie_email()
             else
             {
                 blad_e.innerHTML = "";
-                odb();
+                odb()
             }
        }
         xmlhttp.open("GET","sprawdzanie_email.php?q=" + email,true);
@@ -116,62 +118,21 @@ function sprawdzanie_email()
     }
 
 }
-
-function imie()
-{
-    const imie=document.querySelector("#logowanie_n").value;
-    const blad=document.querySelector("#blad_imie");
-    if(imie=="")
-        blad.innerHTML="podaj imie";
-    else
-    {
-        blad.innerHTML= "";
-        odb();
-    }
-}
-
-function nazwisko()
-{
-    const nazwisko=document.querySelector("#logowanie_s").value;
-    const blad=document.querySelector("#blad_nazwisko");
-    
-    if(nazwisko=="")
-        blad.innerHTML="podaj nazwisko";
-    
-    else
-    {
-        blad.innerHTML= "";
-        odb();
-    }
-
-}
-
-function wybor(wyb)
-{
-    odb()
-}
-
-function data(date)
-{
-    alert(date);
-
-}
-
 function odb()
 {   
-    g++;
-    let imie=document.querySelector("#blad_imie").value;
-    const nazwisko=document.querySelector("#blad_nazwisko").value;
     const haslo=document.querySelector("#blad_password").value;
     const powtorz=document.querySelector("#blad_password_powtorz").value;
     const uzytkownik=document.querySelector("#blad_username").value;
     const email=document.querySelector("#blad_email").value;
-    const wyb1=document.querySelector("#kobieta_box").value;
-    const wyb2=document.querySelector("#mezczyzna_box").value;
-    const dat=document.querySelector("#logowanie_d").value;
-
     
-    
-    if(g>=8 && haslo==undefined && powtorz==undefined && uzytkownik==undefined && email==undefined && imie==undefined && nazwisko==undefined &&(wyb1=="Kobieta"||wyb2=="Mezczyzna")&&dat!="" )
+    if(haslo==undefined && powtorz==undefined && uzytkownik==undefined &&email==undefined)
         wysli.disabled=false
 }
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
