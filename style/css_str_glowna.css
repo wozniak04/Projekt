@@ -159,8 +159,21 @@
   width: 100%;
   margin-bottom:380px;
 }
-#linia_menu{
-    width: 1872px;
+#linia_menu_dolna{
+    width: 1480px;
     height: 1px;
-    border: 1px solid black;
+    border: 1px initial gray;
+    top: 11%;
+    left: 2%;
+    position: absolute;
+    background-color: grey;
+}
+#linia_menu_gorna{
+    width: 1480px;
+    height: 1px;
+    border: 1px initial gray;
+    top: 8%;
+    left: 2%;
+    position: absolute;
+    background-color: grey;
 }
