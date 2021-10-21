@@ -2,15 +2,22 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style/css_str_glowna.css">
     <title>eApteka - Strona Glowna</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <main>
+        
         <div id="menu">
             <img src="" id="logo_menu">
+            <input type="search" id="search_menu" name="" placeholder="Szukaj...">
+            <button id="bttn_search">Search</button>
             <p id="text_menu">eApteka</p>
             <p id="text_small_menu">Kuruj sie!</p>
+
+            
             
             
             
@@ -40,6 +47,21 @@
                 <p id="menu_dtowary">Dostepne towary</p>
                 <p id="menu_nasz_sklep">Nasze Sklepy</p>
                 <p id="menu_onas">O nas</p> 
+
+                <div class="font">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum at dolor sit amet euismod.
+                     lorem neque, dignissim quis fermentum vel, vehicula accumsan arcu. Nam quis lectus et quam dapibus
+                      accumsan a id ipsum. Aliquam et orci accumsan, rhoncus dui eget, tempus purus. Etiam eu orci eget 
+                      felis tempor porttitor. Morbi vel libero finibus, venenatis enim vehicula, interdum metus. Donec 
+                      mattis augue nisl, ac dignissim metus molestie ut. Vestibulum eu laoreet ipsum. Nulla tincidunt a 
+                      ex a laoreet. Proin turpis nibh, faucibus ut ullamcorper eu, vulputate sed tellus.
+                </div>
+                <button type="submit" value="" id="bttn1" onclick="fontplus()">+</button>
+                <button type="submit" value="" id="bttn2" onclick="fontminus()">-</button>
+                <form method="post" action="logout.php">
+                    <button type="submit" id="bttn_off">Wyloguj się</button>
+                </form> 
+
             </div>    
             <div id="linia_menu_gorna"></div>
             <div id="linia_menu_dolna"></div>
@@ -52,19 +74,7 @@
         
 
 
-        <div class="font">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum at dolor sit amet euismod.
-             lorem neque, dignissim quis fermentum vel, vehicula accumsan arcu. Nam quis lectus et quam dapibus
-              accumsan a id ipsum. Aliquam et orci accumsan, rhoncus dui eget, tempus purus. Etiam eu orci eget 
-              felis tempor porttitor. Morbi vel libero finibus, venenatis enim vehicula, interdum metus. Donec 
-              mattis augue nisl, ac dignissim metus molestie ut. Vestibulum eu laoreet ipsum. Nulla tincidunt a 
-              ex a laoreet. Proin turpis nibh, faucibus ut ullamcorper eu, vulputate sed tellus.
-        </div>
-        <button type="submit" value="" onclick="fontplus()">+</button>
-        <button type="submit" value="" onclick="fontminus()">-</button>
-        <form method="post" action="logout.php">
-            <button type="submit">Wyloguj się</button>
-        </form> 
+        
 
     </main>
     <script src="main.js"></script>

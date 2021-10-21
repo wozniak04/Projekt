@@ -1,6 +1,7 @@
 /* body{
     background: linear-gradient(#eda909, #8CE0EB);
 } */
+
 #menu{
     width: 1532px;
     height: 1080px;
@@ -11,6 +12,7 @@
     border-start-start-radius: 10px;
     border-start-end-radius: 10px;
     float: left;
+    max-width: 100%;
     background-color: whitesmoke;
 }
 #rej_zdjecie_pg{
@@ -19,6 +21,7 @@
     position: absolute;
     margin: -100px 0 0 -150px;
     top: 14%;
+    max-width: 100%;
     left: 82%;
     
 }
@@ -27,6 +30,7 @@
     margin: -100px 0 0 -150px;
     top: 14%;
     left: 84%;
+    max-width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #asystent_menu{
@@ -40,6 +44,7 @@
     border-start-end-radius: 10px;
     top: 10%;
     left: 100%;
+    max-width: 100%;
     float: right;
 
 }
@@ -47,8 +52,9 @@
 #text_menu{
     position: absolute;
     margin: -100px 0 0 -150px;
-    top: 13%;
+    top: 14%;
     left: 18%;
+    max-width: 100%;
     font-size: x-large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -58,12 +64,33 @@
     margin: -100px 0 0 -150px;
     top: 14%;
     left: 23%;
+    max-width: 100%;
     font-size: small;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#search_menu{
+    position: absolute;
+    width: 400px;
+    height: 35px;
+    top: 3%;
+    left: 30%;
+    max-width: 100%;
+}
+
+#bttn_search{
+    position: absolute;
+    width: 75px;
+    height: 35px;
+    top: 3%;
+    max-width: 100%;
+    left: 51%;
+
 }
 #asystent_title{
     position: absolute;
     margin: -100px 0 0 -150px;
+    max-width: 100%;
     top: 13%;
     left: 95%;
     font-size: large;
@@ -75,6 +102,7 @@
     top: 19%;
     left: 16%;
     font-size: medium;
+    max-width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #menu_wleki{
@@ -82,6 +110,7 @@
     margin: -100px 0 0 -150px;
     top: 19%;
     left: 30%;
+    max-width: 100%;
     font-size: medium;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -90,6 +119,7 @@
     margin: -100px 0 0 -150px;
     top: 19%;
     left: 44%;
+    max-width: 100%;
     font-size: medium;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -98,6 +128,7 @@
     margin: -100px 0 0 -150px;
     top: 19%;
     left: 58%;
+    max-width: 100%;
     font-size: medium;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -105,6 +136,7 @@
     position: absolute;
     margin: -100px 0 0 -150px;
     top: 19%;
+    max-width: 100%;
     left: 72%;
     font-size: medium;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -116,11 +148,12 @@
   border: none;
   cursor: pointer;
   opacity: 0.8;
-  position: fixed;
+  position: absolute;
   top: 3%;
   left: 71%;
   width: 150px;
   height: 40px;
+  max-width: 100%;
 }
 .form-popup {
   display: none;
@@ -130,6 +163,7 @@
   height: 300px;
   border: 3px solid #f1f1f1;
   z-index: 9;
+  max-width: 100%;
   
 }
 .form-container {
@@ -176,4 +210,29 @@
     left: 2%;
     position: absolute;
     background-color: grey;
+}
+
+.font{
+    top: 15%;
+    left: 2%;
+    position: absolute;
+    width: 1400px;
+}
+
+#bttn1{
+    top: 12%;
+    left: 75%;
+    position: absolute;
+}
+
+#bttn2{
+    top: 12%;
+    left: 77%;
+    position: absolute;
+}
+
+#bttn_off{
+    top: 110%;
+    left: 2%;
+    position: absolute;
 }
