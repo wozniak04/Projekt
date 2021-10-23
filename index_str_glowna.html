@@ -13,7 +13,7 @@
         <div id="menu">
             <img src="" id="logo_menu">
             <input type="search" id="search_menu" name="" placeholder="Szukaj...">
-            <button id="bttn_search">Search</button>
+            <button id="bttn_search" onmouseenter="szuk()" onmouseleave="stop()">Szukaj</button>
             <p id="text_menu">eApteka</p>
             <p id="text_small_menu">Kuruj sie!</p>
 
@@ -22,7 +22,7 @@
             
             
             <!-- Dodalem wstepny js / Wozniak jak chcesz to mozesz cos w nim pozmieniac / do tych wyborow w ustawieniach trzeba dodac sql aby wybory byly zapisane itd Pozdro -->
-            <button class="open-button" onclick="openForm()">Ustawienia</button>
+            <button class="open-button" onclick="openForm()" onmouseenter="setings()" onmouseleave="stop()">Ustawienia</button>
                 <div class="form-popup" id="myForm">
                 <form action="" class="form-container">
 
@@ -44,11 +44,11 @@
             
             <div> 
                 <!-- Tu myslalem aby do tych <p> dodac onclickout lub inna funkcje i przez nacisniecie po prawej stronie asystent odpowiadalby nam! w stylu Nasze sklepy znajduja sie tu i tu i bylby link do google maps przenoszacy nas do Elektryka... -->
-                <p id="menu_specjalisci" onmouseenter="specjalisci()">Nasi Specjalisci</p>
-                <p id="menu_wleki">Wszystkie leki</p>
-                <p id="menu_dtowary">Dostepne towary</p>
-                <p id="menu_nasz_sklep">Nasze Sklepy</p>
-                <p id="menu_onas">O nas</p> 
+                <p id="menu_specjalisci" onmouseenter="specjalisci()" onmouseleave="stop()">Nasi Specjalisci</p>
+                <p id="menu_wleki" onmouseenter="leki()" onmouseleave="stop()">Wszystkie leki</p>
+                <p id="menu_dtowary" onmouseenter="towary()" onmouseleave="stop()">Dostepne towary</p>
+                <p id="menu_nasz_sklep" onmouseenter="nasz()" onmouseleave="stop()">Nasze Sklepy</p>
+                <p id="menu_onas" onmouseenter="onas()" onmouseleave="stop()">O nas</p> 
 
                 <!-- <div class="font">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum at dolor sit amet euismod.
