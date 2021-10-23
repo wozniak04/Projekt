@@ -25,13 +25,15 @@
             <button class="open-button" onclick="openForm()">Ustawienia</button>
                 <div class="form-popup" id="myForm">
                 <form action="" class="form-container">
-                    <p><b>Ustawienia:</b></p>
-                    <label><b>Asystent:</b></label><br>
-                    <input type="radio" name="wybor1" id="wybor1">
-                    <label for="wybor1">Asystent Glosowy</label>
-                    <input type="radio" name="wybor2" id="wybor2">
-                    <label for="wybor2">Asystent Tekstowy</label><br>
-                    
+
+                    <p id="asys_outdiv"><b>Ustawienia:</b></p>
+
+                    <label id="asys_outdiv"><b>Asystent:</b></label><br>
+                    <input type="radio" name="wybor" id="wybor1" value="glos">
+                    <label for="wybor1" id="asys_outdiv">Asystent Glosowy</label>
+                    <input type="radio" name="wybor" id="wybor2" value="txt">
+                    <label for="wybor2" id="asys_outdiv">Asystent Tekstowy</label><br>
+                
                     <button type="submit" class="btn">Potwierdz</button>
                     <button type="button" class="cancel" onclick="closeForm()">Zamknij</button>
                 </form>
@@ -56,6 +58,7 @@
                       mattis augue nisl, ac dignissim metus molestie ut. Vestibulum eu laoreet ipsum. Nulla tincidunt a 
                       ex a laoreet. Proin turpis nibh, faucibus ut ullamcorper eu, vulputate sed tellus.
                 </div>
+                <p id="czcionka_button">Czcionka</p>
                 <button type="submit" value="" id="bttn1" onclick="fontplus()">+</button>
                 <button type="submit" value="" id="bttn2" onclick="fontminus()">-</button>
                 <form method="post" action="logout.php">
@@ -69,7 +72,13 @@
         
         <div id="asystent_menu">
             <p id="asystent_title">Asystent eApteki</p>
+            
+            
+            <div id="wiadomosci_asystent">
+                
+                
 
+            </div>
         </div>
         
 
