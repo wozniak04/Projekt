@@ -4,7 +4,7 @@
 	
 	if ((!isset($_POST['login'])) || (!isset($_POST['haslo'])))
 	{
-		header('Location: index_str_glowna.html');
+		header('Location: index.html');
 		exit();
 	}
 
@@ -50,7 +50,7 @@
 					
 					unset($_SESSION['blad']);
 					$rezultat->free_result();
-					header('Location: index_str_glowna.html');
+					header('Location: index.html');
 			}else {
 				$_SESSION['blad'] = '<span style="color:red">Nieprawidłowy login lub hasło!</span>';
 				header('Location: index_logowanie.html');

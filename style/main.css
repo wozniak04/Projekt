@@ -1,0 +1,191 @@
+.logo{
+    width: 250px;
+}
+
+.q{
+	grid-area: q;
+	margin: 5px;
+    padding: 5px;
+}
+.navigation{
+	border: 1px solid black;
+	grid-area:w;
+    background-color: aquamarine;
+    height: 50px;
+	margin: 5px;
+    margin-top: 30px;
+    border-radius: 40px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;    /*żeby motto z baneru nie wchodziło na navigacje*/
+}
+/* do nawigaacji */
+.spec{
+    grid-area: spec;
+}
+.towar{
+    grid-area: towar;
+}
+.sklepy{
+    grid-area: sklepy;
+}
+.my{
+    grid-area: my;
+}
+.navigation ul {
+
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 80px;
+	grid-template-areas:
+		"spec towar sklepy my"
+}
+.navigation ul li {
+	display: inline-block;
+}
+.navigation ul li a {
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.navigation ul li a:hover {
+	color: black;
+	font-size: 22px;
+}
+/* Koniec nawigacji */
+
+/* baner */
+.baner {
+
+	grid-area: baner;
+	border-radius: 10px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../zdjecia/baner.jfif');
+	background-size: cover;
+	background-attachment: fixed;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 10px;
+	grid-template-areas:
+		"pusteh2 h2 h2 pusteh2_1";
+}
+
+.pusteh2 {
+	grid-area: pusteh2;
+}
+
+.baner h2 {
+	grid-area: h2;
+	text-align: center;
+	font-size: 35px;
+	letter-spacing: 1px;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	top: 20px;
+
+}
+
+.pusteh2_1 {
+	grid-area: pusteh2_1;
+}
+
+.puste3 {
+	grid-area: puste3;
+}
+/* koniec baneru */
+
+
+.e{
+	border: 1px solid black;
+	grid-area:e;
+	margin: 5px;
+}
+.u{
+	border: 1px solid black;
+	grid-area:u;
+	margin: 5px;
+}
+.i{
+	border: 1px solid black;
+	grid-area:i;
+	margin: 5px;
+	background-color: aqua;
+    padding: 15px;
+}
+.specjalisci{
+    padding-top: 60px;
+}
+.dtowary{
+    margin-top: 30px;
+    padding-top: 40px;
+    
+}
+.mapa{
+    margin-top: 30px;
+}
+/* czat */
+.o{
+	border: 1px solid black;
+	grid-area: o;
+	margin: 5px;
+
+	position: sticky;
+	top: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 540px;
+    grid-template-areas: 
+        "gora gora gora gora" /*100*/
+        "dol dol dol dol" /*110*/
+}
+.gora{
+    grid-area: gora;
+    background-color: antiquewhite;
+}
+.dol{
+    grid-area: dol;
+    background-color:blue;
+}
+.p{
+	border: 1px solid black;
+	grid-area: p;
+	margin: 5px;
+    background-color: black;
+    border-radius: 40px ;
+}
+
+.my{
+    grid-area: my;
+    
+}
+.pp{
+	grid-area:pp;
+	margin:5px;
+}
+/* .nagore{
+    width: 40px;
+    height: 40px;
+    background-color: burlywood;
+    position: sticky;
+    top: 660;
+    
+} */
+ .wrapper{
+	 display: grid;
+	 grid-template-columns: 1fr 1fr 1fr 1fr;
+	 grid-template-rows: 100px 110px 600px 600px 400px 400px 100px 100px;
+	 grid-template-areas: 
+		 "q q q q" /*100*/
+		 "w w w w" /*110*/
+		 "baner baner baner baner" /*600*/
+		 "i i i o" /*600*/ 
+		 "i i i pp" /*400*/
+         "i i i pp" /*400*/
+         "my my my pp"
+		 "p p p p" /*100*/
+}
