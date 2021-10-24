@@ -125,7 +125,7 @@ function odb()
     const uzytkownik=document.querySelector("#blad_username").value;
     const email=document.querySelector("#blad_email").value;
     
-    if(haslo==undefined && powtorz==undefined && uzytkownik==undefined &&email==undefined)
+    if(g>=8 && haslo==undefined && powtorz==undefined && uzytkownik==undefined && email==undefined && imie==undefined && nazwisko==undefined &&(wyb1=="Kobieta"||wyb2=="Mezczyzna")&&dat!="" )
         wysli.disabled=false
 }
 
