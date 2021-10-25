@@ -120,7 +120,85 @@
 }
 /* koniec baneru */
 
+/* asytenci */
+.opis1{
+	grid-area: o1;
+}
+.zdj1{
+	grid-area: z1;
+}
+.opis2{
+	grid-area: o2;
+}
+.zdj2{
+	grid-area: z2;
+}
+.opis3{
+	grid-area: o3;
+}
+.zdj3{
+	grid-area: z3;
+}
+.spec_wrap{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 50px 540px; */
+    grid-template-areas: 
+        "o1 z1" /*100*/
+        "o2 z2" /*110*/
+		"o3 z3"
+}
+.spec_wrap h3{
+	margin-top: 20px;
+}
+/* koniec asystentów */
+/* css do leków */
+.lek1{grid-area: lek1;}
+.lek2{grid-area: lek2;}
+.lek3{grid-area: lek3;}
+.lek4{grid-area: lek4;}
+.lek5{grid-area: lek5;}
+.lek6{grid-area: lek6;}
+.lek7{grid-area: lek7;}
+.lek8{grid-area: lek8;}
+.lek9{grid-area: lek9;}
+.lek10{grid-area: lek10;}
+.lek11{grid-area: lek11;}
+.lek12{grid-area: lek12;}
+.zdj1{grid-area: zdj1;}
+.zdj2{grid-area: zdj2;}
+.zdj3{grid-area: zdj3;}
+.zdj4{grid-area: zdj4;}
+.zdj5{grid-area: zdj5;}
+.zdj6{grid-area: zdj6;}
+.zdj7{grid-area: zdj7;}
+.zdj8{grid-area: zdj8;}
+.zdj9{grid-area: zdj9;}
+.zdj10{grid-area: zdj10;}
+.zdj11{grid-area: zdj11;}
+.zdj12{grid-area: zdj12;}
 
+.dtowary{
+	margin-top: 30px;
+    padding-top: 40px;
+
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 50px 540px; */
+    grid-template-areas: 
+        "lek1 zd1" 
+        "zd2 lek2"
+		"lek3 zd3" 
+        "zd4 lek4"
+		"lek5 zd5" 
+        "zd6 lek6"
+		"lek7 zd7" 
+        "zd8 lek8"
+		"lek9 zd9" 
+        "zd10 lek10"
+		"lek11 zd11" 
+        "zd12 lek12" 
+}
 .e{
 	border: 1px solid black;
 	grid-area:e;
@@ -141,11 +219,7 @@
 .specjalisci{
     padding-top: 60px;
 }
-.dtowary{
-    margin-top: 30px;
-    padding-top: 40px;
-    
-}
+
 .mapa{
     margin-top: 30px;
 }
@@ -200,14 +274,14 @@
  .wrapper{
 	 display: grid;
 	 grid-template-columns: 1fr 1fr 1fr 1fr;
-	 grid-template-rows: 100px 110px 600px 600px 400px 400px 100px 100px;
+	 grid-template-rows: 100px 110px 600px 800px 800px 800px 100px 100px;
 	 grid-template-areas: 
 		 "q q q q" /*100*/
 		 "w w w w" /*110*/
 		 "baner baner baner baner" /*600*/
 		 "i i i o" /*600*/ 
-		 "i i i pp" /*400*/
-         "i i i pp" /*400*/
-         "my my my pp"
+		 "i i i pp" /*600*/
+         "i i i pp" /*600*/
+         "my my my pp" /*100*/
 		 "p p p p" /*100*/
 }
