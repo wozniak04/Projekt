@@ -19,7 +19,27 @@
     top: 0px;
     z-index: 10;    /*żeby motto z baneru nie wchodziło na navigacje*/
 }
-
+/* css do górnego menu */
+.wybierz_asys{
+	grid-area: asys;
+}
+.dane1{
+	grid-area: dane1;
+}
+.dane2{
+	grid-area: dane2;
+}
+.wyloguj{
+	grid-area: wylog;
+}
+.menu_wrap{
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 80px;
+	grid-template-areas:
+		"asys dane1 dane2 wylog"
+}
 
 /* do nawigaacji */
 .spec{

@@ -31,7 +31,7 @@ else
 			exit();
 		 }
 		 if ($mysqli -> errno) {
-			printf("Could not insert record into table: %s<br />", $mysqli -> error);
+			printf("Niestety wystąpił błąd: %s<br />", $mysqli -> error);
 		 }
 
 		 $mysqli -> close();

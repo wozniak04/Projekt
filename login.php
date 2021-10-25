@@ -4,7 +4,7 @@
 	
 	if ((!isset($_POST['login'])) || (!isset($_POST['haslo'])))
 	{
-		header('Location: index.html');
+		header('Location: index.php');
 		exit();
 	}
 
@@ -46,14 +46,15 @@
 					$_SESSION['surname'] = $wiersz['surname'];
 					$_SESSION['email'] = $wiersz['email'];
 					$_SESSION['date_born'] = $wiersz['date_born'];
+					$_SESSION['gender'] = $wiersz['gender'];
 
 					
 					unset($_SESSION['blad']);
 					$rezultat->free_result();
-					header('Location: index.html');
+					header('Location: index.php');
 			}else {
 				$_SESSION['blad'] = '<span style="color:red">Nieprawidłowy login lub hasło!</span>';
-				header('Location: index_logowanie.html');
+				header('Location: index_logowanie.php');
 			}
 
 			} else {

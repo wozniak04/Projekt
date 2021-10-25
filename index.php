@@ -1,3 +1,14 @@
+<?php
+
+	session_start();
+	
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index_logowanie.php');
+		exit();
+	}
+	
+?>
 <!DoCTYPE html>
 <html lang="utf-8">
 	<head>
@@ -16,15 +27,9 @@
 
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-light p-4 menu_wrap">
-              
-              <!-- <span class="text-muted">Wybierz asystenta</span> -->
-            
-              
 
-            
-                
+                    <div class="wybierz_asys">
                     <h5 class="h4">Ustawienia</h5>
-
                     <label id="asys_outdiv"><b>Asystent głosowy:</b></label><br>
 
                     <input type="radio" name="wybor" id="asys_glos_wl" value="glos">
@@ -37,7 +42,29 @@
                     <!-- <input type="radio" name="wybor" id="wybor2" value="txt">
                     <label for="wybor2" id="asys_outdiv">Asystent Tekstowy</label><br>
                     -->
-                
+                    </div>
+                    <div class="dane1">
+                    <?php
+
+                        echo "Witaj ".$_SESSION['username'].'!<br>';
+                        if($_SESSION['admin'] == 1){
+                            echo "Jesteś adminem";
+                        }
+                       
+                        echo "<p><b>Data dołączenia</b>: ".$_SESSION['created_at']."</p>";
+
+                    ?>
+                    </div>
+                    <div class="dane2">
+                    <?php
+                        echo "Imie: ".$_SESSION['name']."<br>";
+                        echo "Nazwisko: ".$_SESSION['surname']."<br>";
+                        echo "Email: ".$_SESSION['email']."<br>";
+                        echo "Data urodzenia: ".$_SESSION['date_born']."<br>";
+
+
+                    ?>
+                    </div>
                 
                
                 <div class="wyloguj">
