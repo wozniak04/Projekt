@@ -35,6 +35,7 @@
     grid-area: my;
 }
 .navigation ul {
+
 	text-align: center;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
