@@ -306,7 +306,6 @@
 
                      <a href="https://goo.gl/maps/vXZUasuTH7mUA6Ah7">Nasz sklep</a>
 
-                     <input type="submit" value="Co na ból gardła">
 
                  </div>
              </div>
@@ -320,19 +319,27 @@
                      Witaj w naszym czacie
                  </div>
              </div>
-             <div class="dol">
+             <div class="odp">
                  
-                     <select name="pytania" >
-                         <option value="volvo">Volvo</option>
-                         <option value="saab">Saab</option>
-                         <option value="mercedes">Mercedes</option>
-                         <option value="audi">Audi</option>
-                     </select>
-                     <button onclick="cos()" value="dsad" id="git">dasds</button>
 
+            </div>
+            <!-- <hr class="hr"> -->
+            <div class="pyta">
+                <button type="button" class="btn btn-outline-warning">Co na ból głowy?</button>
+                <button type="button" class="btn btn-outline-warning">Co na nie dobór wapnia?</button>
+                <button type="button" class="btn btn-outline-warning">Co na przeziębienie?</button>
+                <button type="button" class="btn btn-outline-warning">Co na katar?</button>
+                <button type="button" class="btn btn-outline-warning">Co na zatoki?</button>
+                <button type="button" class="btn btn-outline-warning">Co na obrzęki?</button>
+                <button type="button" class="btn btn-outline-warning">Co na biegunke?</button>
+                <button type="button" class="btn btn-outline-warning">Co na ból gardła?</button>
+                <button type="button" class="btn btn-outline-warning">Jaki termometr?</button>
+                <button type="button" class="btn btn-outline-warning ">Co na przetarcia?</button>
+                <button type="button" class="btn btn-outline-warning ">Mam inne pytanie...</button>
+            </div>
 
                  
-             </div>
+             
          </div>
 
          <div class="container x">
