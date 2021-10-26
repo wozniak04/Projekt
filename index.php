@@ -1,12 +1,12 @@
  <?php
 
-	// session_start();
+	session_start();
 	
-	// if (!isset($_SESSION['zalogowany']))
-	// {
-	// 	header('Location: index_logowanie.php');
-	// 	exit();
-	// }
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index_logowanie.php');
+		exit();
+	}
 	
 ?>
  <!DoCTYPE html>
@@ -322,13 +322,13 @@
              </div>
              <div class="dol">
                  
-                     <select name="pytania" id="git" onmouseleave="cos()">
+                     <select name="pytania" >
                          <option value="volvo">Volvo</option>
                          <option value="saab">Saab</option>
                          <option value="mercedes">Mercedes</option>
                          <option value="audi">Audi</option>
                      </select>
-                     <button>dasds</button>
+                     <button onclick="cos()" value="dsad" id="git">dasds</button>
 
 
                  
