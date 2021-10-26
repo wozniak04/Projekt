@@ -1,14 +1,14 @@
-<!-- <?php
+ <?php
 
-	session_start();
+	// session_start();
 	
-	if (!isset($_SESSION['zalogowany']))
-	{
-		header('Location: index_logowanie.php');
-		exit();
-	}
+	// if (!isset($_SESSION['zalogowany']))
+	// {
+	// 	header('Location: index_logowanie.php');
+	// 	exit();
+	// }
 	
-?> -->
+?> 
 <!DoCTYPE html>
 <html lang="utf-8">
 	<head>
