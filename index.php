@@ -1,12 +1,12 @@
  <?php
 
-	session_start();
+	// session_start();
 	
-	if (!isset($_SESSION['zalogowany']))
-	{
-		header('Location: index_logowanie.php');
-		exit();
-	}
+	// if (!isset($_SESSION['zalogowany']))
+	// {
+	// 	header('Location: index_logowanie.php');
+	// 	exit();
+	// }
 	
 ?>
  <!DoCTYPE html>
@@ -93,19 +93,19 @@
 
      <main class="wrapper">
 
-        <div class="q">
+         <div class="q">
              <img src="zdjecia/logo.png" alt="logo" class="logo">
-        </div>
+         </div>
 
-        <!-- nawigacja -->
-        <div class="navigation">
-            <ul class="nav">
-                <li class="spec">
-                    <a href="#specjalisci" onmouseenter="specjalisci()" onmouseleave="stop()">Nasi specjaliści</a>
-                </li>
-                <li>
-                    <a href="#dtowary" onmouseenter="towary()" onmouseleave="stop()">Dostępne towary</a>
-                </li>
+         <!-- nawigacja -->
+         <div class="navigation">
+             <ul class="nav">
+                 <li class="spec">
+                     <a href="#specjalisci" onmouseenter="specjalisci()" onmouseleave="stop()">Nasi specjaliści</a>
+                 </li>
+                 <li>
+                     <a href="#dtowary" onmouseenter="towary()" onmouseleave="stop()">Dostępne towary</a>
+                 </li>
                  <li class="sklepy">
                      <a href="#mapa" onmouseenter="nasz()" onmouseleave="stop()">Nasze sklepy</a>
                  </li>
@@ -311,27 +311,27 @@
                  </div>
              </div>
          </div>
-         
+
 
          <!-- czat -->
-         <div class="o container">
-             <div class="gora row">
-                 <div class="col-12">
+         <div class="o">
+             <div class="gora">
+                 <div class="">
                      Witaj w naszym czacie
                  </div>
              </div>
-             <div class="dol row">
-                 <div class="col-12">
-
-
-                     <select>
-                         <option value="volvo">Volvo</option>
+             <div class="dol">
+                 
+                     <select name="pytania" >
+                         <option value="volvo"  >Volvo</option>
                          <option value="saab">Saab</option>
                          <option value="mercedes">Mercedes</option>
                          <option value="audi">Audi</option>
                      </select>
+                     <button onclick="cos()">dasds</button>
 
-                 </div>
+
+                 
              </div>
          </div>
 

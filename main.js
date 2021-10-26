@@ -5,7 +5,10 @@ var l=plec.length;
 l--;
 const plecc=plec[l];
 
+function cos(){
+alert("cos");
 
+}
 
 function specjalisci()
 { 

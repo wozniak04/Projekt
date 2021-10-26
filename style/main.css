@@ -230,13 +230,13 @@
 
 	position: sticky;
 	top: 50px;
-/* 
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 540px;
     grid-template-areas: 
         "gora gora gora gora" 
-        "dol dol dol dol" 110 */
+        "dol dol dol dol" 110
 }
 .gora{
     grid-area: gora;
