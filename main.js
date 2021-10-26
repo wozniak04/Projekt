@@ -1,12 +1,12 @@
 let czas;
 let as;
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
+// function openForm() {
+//     document.getElementById("myForm").style.display = "block";
+//   }
   
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
+//   function closeForm() {
+//     document.getElementById("myForm").style.display = "none";
+//   }
 function specjalisci()
 { 
   czas=setTimeout(() => {
@@ -29,15 +29,6 @@ function stop()
 {
     as.load();
     clearTimeout(czas);
-}
-
-function leki()
-{
-  czas=setTimeout(() => {
-    as=new Audio("asystent/meski/leki.mp3");
-    as.play();
-  }, 1000);
-
 }
 
 function towary()
@@ -67,11 +58,106 @@ function onas()
 
 }
 
-function szuk()
+function sinu()
 {
   czas=setTimeout(() => {
-    as=new Audio("asystent/meski/szukaj.mp3");
+    as=new Audio("asystent/meski/sinupret.mp3");
     as.play();
   }, 1000);
 
+}
+function calcu()
+{
+  czas=setTimeout(() => {
+    as=new Audio("asystent/meski/calcium.mp3");
+    as.play();
+  }, 1000);
+}
+
+function grip()
+{
+  czas=setTimeout(() => {
+    as=new Audio("asystent/meski/gripex.mp3");
+    as.play();
+  }, 1000);
+}
+
+function envil()
+{
+  czas=setTimeout(() => {
+    as=new Audio("asystent/meski/envil.mp3");
+    as.play();
+  }, 1000);
+}
+
+function voltar()
+{
+  czas=setTimeout(() => {
+    as=new Audio("asystent/meski/voltaren.mp3");
+    as.play();
+  }, 1000);
+}
+
+function fer()
+{
+  czas=setTimeout(() => {
+    as=new Audio("asystent/meski/fervex.mp3");
+    as.play();
+  }, 1000);
+}
+
+function enterol()
+{
+  czas=setTimeout(() => {
+    as=new Audio("asystent/meski/enetrol.mp3");
+    as.play();
+  }, 1000);
+}
+
+function otri()
+{
+  czas=setTimeout(() => {
+    as=new Audio("asystent/meski/otrivin.mp3");
+    as.play();
+  }, 1000);
+}
+
+function molek()
+{
+  czas=setTimeout(() => {
+    as=new Audio("asystent/meski/molekind3.mp3");
+    as.play();
+  }, 1000);
+}
+
+function arge()
+{
+  czas=setTimeout(() => {
+    as=new Audio("asystent/meski/argentint.mp3");
+    as.play();
+  }, 1000);
+}
+
+function yuwe()
+{
+  czas=setTimeout(() => {
+    as=new Audio("asystent/meski/termometr.mp3");
+    as.play();
+  }, 1000);
+}
+
+function octa()
+{
+  czas=setTimeout(() => {
+    as=new Audio("asystent/meski/octanisept.mp3");
+    as.play();
+  }, 1000);
+}
+
+function ustawienia()
+{
+  czas=setTimeout(() => {
+    as=new Audio("asystent/meski/ustawienia.mp3");
+    as.play();
+  }, 1000);
 }

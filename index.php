@@ -26,7 +26,7 @@
 </head>
 	<body>
 
-        <div class="collapse" id="navbarToggleExternalContent">
+        <div class="collapse" id="navbarToggleExternalContent" >
             <div class="bg-light p-4 menu_wrap">
 
                     <div class="wybierz_asys">
@@ -78,7 +78,7 @@
           </div>
           <nav class="navbar navbar-dark bg-light">
             <div class="container-fluid">
-              <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onmouseenter="ustawienia()" onmouseleave="stop()">
                 <span class="navbar-toggler-icon"></span>
               </button>
             </div>
@@ -145,51 +145,51 @@
                 </div>
                 <!-- dostępne towary i zdjecia -->
                 <div class="dtowary" id="dtowary">
-                    <div id="sinupret" class="lek1">
+                    <div class="lek1" onmouseenter="sinu()" onmouseleave="stop()">
                         <h2>Sinupret:</h2> Lek Sinupret, tabletki drażowane, do leczenia ostrych niepowikłanych stanów zapalnych przynosowych z objawami kaszlu, bólu głowy i niedrażności nosa.
                     </div>
                     <div class="zdj1"><img src="" class="img-thumbnail" alt="sinupret"></div>
-                    <div id="calcium" class="lek2">
+                    <div  class="lek2" onmouseenter="calcu()" onmouseleave="stop()">
                         <h2>Calcium Hasco:</h2> Lek Calcium Hasco, syrop, stosowany w leczeniu osteoporozy, uzupełnia niedobory wapnia w organizmie np. w okresie ciąży
                     </div>
                     <div class="zdj2"><img src="..." class="img-thumbnail" alt="Calcium Hasco"></div>
-                    <div id="gripex_hot" class="lek3">
+                    <div class="lek3" onmouseenter="grip()" onmouseleave="stop()" >
                         <h2>Gripex Hot:</h2> Lek Gripex Hot, saszetki rozpuszczalne w wodzie, lek stosowany na goraczke, ból głowy, katar, ból mieśni, ból gardła
                     </div>
                     <div class="zdj3"><img src="..." class="img-thumbnail" alt="Gripex Hot"></div>
-                    <div id="envil" class="lek4">
+                    <div class="lek4" onmouseenter="envil()" onmouseleave="stop()">
                         <h2>Envil Katar:</h2> Lek Envil, podanie donosowe, łagodzi katar, udrażnia nos i zatoki, ułatwia oddychanie, działa przeciwbakteryjnie
                     </div>
                     <div class="zdj4"><img src="..." class="img-thumbnail" alt="Envil Katar"></div>
-                    <div id="voltaren" class="lek5">
+                    <div class="lek5" onmouseenter="voltar()" onmouseleave="stop()">
                         <h2>Voltaren Max:</h2> Lek Voltaren Max, podawany na skórę, Lek o silnym działaniu przeciwbólowym, przeciwzapalnym i przeciwobrzękowym
                     </div>
                     <div class="zdj5"><img src="..." class="img-thumbnail" alt="Voltaren Max"></div>
-                    <div id="fervex" class="lek6">
+                    <div class="lek6" onmouseenter="fer()" onmouseleave="stop()">
                         <h2>Fervex:</h2> Lek Fervex, saszetki rozpuszczalne w wodzie, leczy objawy przeziębienia i grypy jak i stanów grypopodobnych (gorączka i zapalenie gardła)
                     </div>
                     <div class="zdj6"><img src="..." class="img-thumbnail" alt="Fervex"></div>
-                    <div id="enterol" class="lek7">
+                    <div class="lek7" onmouseenter="enterol()" onmouseleave="stop()">
                         <h2>Enterol:</h2> Lek Enterol, kapsułki podawane doustnie, zapobiega biegunkom poantybiotykowym i zapobiega biegunkom podróżnym. 
                     </div>
                     <div class="zdj7"><img src="..." class="img-thumbnail" alt="Enterol"></div>
-                    <div id="otrivin" class="lek8">
+                    <div class="lek8" onmouseenter="otri()" onmouseleave="stop()">
                         <h2>Otrivin:</h2> Lek Otrivin, podanie donosowe, Pomaga na nadmierne przekrwienie błony śluzowej nosa w przebiegu przeziębienia lub kataru siennego
                     </div>
                     <div class="zdj8"><img src="..." class="img-thumbnail" alt="Otrivin"></div>
-                    <div id="molekin" class="lek9">
+                    <div class="lek9" onmouseenter="molek()" onmouseleave="stop()">
                         <h2>Molekin D3:</h2> Lek Molekin D3, tabletki powlekane, wpływa na układ odpornościowy, zdrowe kości i zęby i prawidłowy poziom wapnia we krwi
                     </div>
                     <div class="zdj9"><img src="..." class="img-thumbnail" alt="Molekin D3"></div>
-                    <div id="argentin" class="lek10">
+                    <div class="lek10" onmouseenter="arge()" onmouseleave="stop()">
                         <h2>Argentin-T:</h2> Lek Argentin-T, spray do gardła, wspomaga leczenie stanów zapalnych gardła, spodowanych przez infekcje bakteryjne
                     </div>
                     <div class="zdj10"><img src="..." class="img-thumbnail" alt="Argentin"></div>
-                    <div id="termometr" class="lek11">
+                    <div class="lek11" onmouseenter="yuwe()" onmouseleave="stop()">
                         <h2>Termometr Yuwell:</h2> Termometr na podczerwień, świetny w pomiarze temperatury ciała.
                     </div>
                     <div class="zdj11"><img src="..." class="img-thumbnail" alt="termometr"></div>
-                    <div id="octanisept" class="lek12">
+                    <div class="lek12" onmouseenter="octa()" onmouseleave="stop()">
                         <h2>Octanisept:</h2> Lek Octanisept, podanie na skóre (doogniskowo), lek stosowany na rany, błonę śluzową i skórę
                     </div>
                     <div class="zdj12"><img src="..." class="img-thumbnail" alt="Octanisept"></div>
