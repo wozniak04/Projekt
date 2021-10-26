@@ -1,12 +1,12 @@
  <?php
 
-	// session_start();
+	session_start();
 	
-	// if (!isset($_SESSION['zalogowany']))
-	// {
-	// 	header('Location: index_logowanie.php');
-	// 	exit();
-	// }
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index_logowanie.php');
+		exit();
+	}
 	
 ?> 
 <!DoCTYPE html>
@@ -51,7 +51,7 @@
                         if($_SESSION['admin'] == 1){
                             echo "Jesteś adminem";
                         }
-                       
+                        echo "<br><p id='plec'>Jesteś:".$_SESSION['gender']."</p>";
                         echo "<p><b>Data dołączenia</b>: ".$_SESSION['created_at']."</p>";
 
                     ?>
@@ -62,7 +62,7 @@
                         echo "Nazwisko: ".$_SESSION['surname']."<br>";
                         echo "Email: ".$_SESSION['email']."<br>";
                         echo "Data urodzenia: ".$_SESSION['date_born']."<br>";
-
+                       
 
                     ?>
                     </div>
