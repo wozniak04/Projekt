@@ -1,12 +1,8 @@
 let czas;
 let as;
-// function openForm() {
-//     document.getElementById("myForm").style.display = "block";
-//   }
-  
-//   function closeForm() {
-//     document.getElementById("myForm").style.display = "none";
-//   }
+const plec=document.querySelector("#plec").value;
+alert(plec);
+
 function specjalisci()
 { 
   czas=setTimeout(() => {
