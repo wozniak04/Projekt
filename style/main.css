@@ -10,7 +10,7 @@
 .navigation{
 	border: 1px solid black;
 	grid-area:w;
-    background-color: aquamarine;
+    background-color:aquamarine;
     height: 50px;
 	margin: 5px;
     margin-top: 30px;
@@ -53,6 +53,7 @@
 }
 .my{
     grid-area: my;
+	height: 300px;
 }
 .navigation ul {
 
@@ -182,22 +183,21 @@
 	margin-top: 30px;
     padding-top: 40px;
 
-	display: grid;
+	/* display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 50px 540px; */
     grid-template-areas: 
-        "lek1 zd1" 
-        "zd2 lek2"
-		"lek3 zd3" 
-        "zd4 lek4"
-		"lek5 zd5" 
-        "zd6 lek6"
-		"lek7 zd7" 
+        "lek1 zdj1" 
+        "zdj2 lek2"
+		"lek3 zdj3" 
+        "zdj4 lek4"
+		"lek5 zdj5" 
+        "zdj6 lek6"
+		"lek7 zdj7" 
         "zd8 lek8"
-		"lek9 zd9" 
-        "zd10 lek10"
-		"lek11 zd11" 
-        "zd12 lek12" 
+		"lek9 zdj9" 
+        "zdj10 lek10"
+		"lek11 zdj11" 
+        "zdj12 lek12"  */
 }
 .e{
 	border: 1px solid black;
@@ -213,7 +213,6 @@
 	border: 1px solid black;
 	grid-area:i;
 	margin: 5px;
-	background-color: aqua;
     padding: 15px;
 }
 .specjalisci{
@@ -227,25 +226,26 @@
 .o{
 	border: 1px solid black;
 	grid-area: o;
-	margin: 5px;
+	/* margin: 2px; */
 
 	position: sticky;
 	top: 50px;
-
+/* 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 540px;
     grid-template-areas: 
-        "gora gora gora gora" /*100*/
-        "dol dol dol dol" /*110*/
+        "gora gora gora gora" 
+        "dol dol dol dol" 110 */
 }
 .gora{
     grid-area: gora;
-    background-color: antiquewhite;
+    background-color:azure;
 }
 .dol{
     grid-area: dol;
-    background-color:blue;
+    background-color:gainsboro;
+	height: 550px;
 }
 .p{
 	border: 1px solid black;
@@ -257,7 +257,9 @@
 
 .my{
     grid-area: my;
-    
+}
+.x{
+    grid-area: x;
 }
 .pp{
 	grid-area:pp;
@@ -274,14 +276,14 @@
  .wrapper{
 	 display: grid;
 	 grid-template-columns: 1fr 1fr 1fr 1fr;
-	 grid-template-rows: 100px 110px 600px 800px 800px 800px 100px 100px;
+	 grid-template-rows: 100px 110px 600px;
 	 grid-template-areas: 
 		 "q q q q" /*100*/
 		 "w w w w" /*110*/
 		 "baner baner baner baner" /*600*/
-		 "i i i o" /*600*/ 
-		 "i i i pp" /*600*/
-         "i i i pp" /*600*/
-         "my my my pp" /*100*/
-		 "p p p p" /*100*/
+		 "i i i o"  
+		 "i i i pp" 
+         "i i i pp" 
+         "x x x pp" 
+		 "p p p p" 
 }
