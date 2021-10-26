@@ -1,7 +1,7 @@
 let czas;
 let as;
 const plec=document.querySelector("#plec").innerHTML;
-var l=plec.length();
+var l=plec.length;
 l--;
 const plecc=plec[l];
 
@@ -9,21 +9,24 @@ alert(plecc);
 
 function specjalisci()
 { 
-  czas=setTimeout(() => {
-    as=new Audio("asystent/meski/nasi.mp3");
-    as.play();
-  }, 1000);
-
+  if(plecc=='m')
+  {
+    czas=setTimeout(() => {
+      as=new Audio("asystent/meski/nasi.mp3");
+      as.play();
+    }, 1000);
+  }
 }
 
 function setings()
-{
-  czas=setTimeout(() => {
-    as=new Audio("asystent/meski/ustawienia.mp3");
-    as.play();
-  }, 1000);
-  
-
+{ 
+  if(plecc='m')
+  {
+    czas=setTimeout(() => {
+      as=new Audio("asystent/meski/ustawienia.mp3");
+      as.play();
+    }, 1000);
+  }
 }
 function stop()
 {
@@ -32,30 +35,36 @@ function stop()
 }
 
 function towary()
-{
-  czas=setTimeout(() => {
-    as=new Audio("asystent/meski/towary.mp3");
-    as.play();
-  }, 1000);
-
+{ 
+  if(plec=='m')
+  {
+    czas=setTimeout(() => {
+      as=new Audio("asystent/meski/towary.mp3");
+      as.play();
+    }, 1000);
+  }
 }
 
 function nasz()
-{
-  czas=setTimeout(() => {
-    as=new Audio("asystent/meski/sklepy.mp3");
-    as.play();
-  }, 1000);
-
+{ 
+  if(plecc='m')
+  {
+    czas=setTimeout(() => {
+      as=new Audio("asystent/meski/sklepy.mp3");
+      as.play();
+    }, 1000);
+  }
 }
 
 function onas()
-{
+{ 
+  if(plec=='m')
+  {
   czas=setTimeout(() => {
     as=new Audio("asystent/meski/nas.mp3");
     as.play();
   }, 1000);
-
+  }
 }
 
 function sinu()
