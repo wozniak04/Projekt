@@ -1,6 +1,6 @@
 let czas;
 let as;
-const plec=document.querySelector("#plec").value;
+const plec=document.querySelector("#plec").innerHTML;
 alert(plec);
 
 function specjalisci()
