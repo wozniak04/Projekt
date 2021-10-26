@@ -51,7 +51,7 @@
                         if($_SESSION['admin'] == 1){
                             echo "Jesteś adminem";
                         }
-                        echo "<br><p id='plec'>Jesteś:".$_SESSION['gender']."</p>";
+                        echo "<br><div id='plec'>Jesteś:".$_SESSION['gender']."</div>";
                         echo "<p><b>Data dołączenia</b>: ".$_SESSION['created_at']."</p>";
 
                     ?>
