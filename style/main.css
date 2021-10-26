@@ -276,9 +276,29 @@
 .p{
 	border: 1px solid black;
 	grid-area: p;
-	margin: 5px;
+	/* margin: 5px; */
+	text-align: center;
     background-color: black;
     border-radius: 40px ;
+
+/* 
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+        "fb ig yt tw"  */
+}
+.fb{
+	grid-area: fb;
+}
+.ig{
+	grid-area:ig;
+}
+.yt{
+	grid-area:yt;
+}
+.tw{
+	grid-area: tw;
 }
 
 .my{

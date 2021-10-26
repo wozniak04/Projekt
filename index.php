@@ -304,9 +304,19 @@
                  <div class="mapa" id="mapa">
                      <h1>Nasze sklepy</h1>
 
-                     <a href="https://goo.gl/maps/vXZUasuTH7mUA6Ah7">Nasz sklep</a>
+                     <address>
+                        
+                        Możesz nas odwiedzić <a href="https://goo.gl/maps/vXZUasuTH7mUA6Ah7">tu:</a><br>
+                        Wejherowo<br>
+                        Strzelecka 9, 84-200 Wejherowo<br>
+                        Polska
 
+                    </address>
 
+                    
+
+                     Jeśli widzisz jakieś błędy, proszę <a href="mailto:arkadiuszguth@gmail.com">
+                        skontaktuj się z administratorem</a>.<br>
                  </div>
              </div>
          </div>
@@ -344,7 +354,7 @@
 
          <div class="container x">
              <div class="row">
-                 <div class="my col" id="my">Coś o nas</div>
+                 <div class="my col" id="my"></div>
              </div>
          </div>
 
@@ -353,20 +363,21 @@
 
 
 
-         <div class="p">
+         <div class="p container">
              <!-- stopka -->
 
              <!-- fb -->
-             <a class="" href="http://www.facebook.com/" target="_blank"><svg width="36px" height="36px"
-                     class="social-media">
+             <div class="row">
+             <a class="col-lg-3 mt-3 mb-3" href="http://www.facebook.com/" target="_blank"><svg width="36px" height="36px"
+                     class="fb">
                      <path
                          d="M15.768 15.737H12v3.315h3.768V29h4.422v-9.948h4.42v-3.315h-4.42v-1.335c0-1.002 1.053-3.087 2.589-3.087h1.831V8h-3.868c-5.457.795-4.974 7.737-4.974 7.737z"
                          fill="currentColor"></path>
-                 </svg><span class="audi-footer__social-media-label"></span></a>
+                 </svg><span class=""></span></a>
 
              <!-- insta -->
-             <a class="" href="http://instagram.com/" target="_blank"><svg width="36px" height="36px"
-                     class="social-media">
+             <a class="col-lg-3 mt-3 mb-3" href="http://instagram.com/" target="_blank"><svg width="36px" height="36px"
+                     class="ig">
                      <g fill="currentColor">
                          <path
                              d="M18 10.621c2.403 0 2.688.01 3.637.053.877.04 1.354.188 1.671.31.42.162.72.359 1.035.672.316.316.51.615.672 1.035.123.318.27.795.311 1.673.043.948.052 1.233.052 3.636s-.009 2.688-.052 3.637c-.04.878-.186 1.354-.31 1.671a2.8 2.8 0 01-.674 1.035c-.315.316-.615.51-1.035.672-.315.125-.792.27-1.67.311-.949.043-1.234.052-3.637.052s-2.688-.009-3.637-.052c-.877-.04-1.354-.186-1.671-.31a2.787 2.787 0 01-1.036-.672 2.771 2.771 0 01-.671-1.036c-.125-.317-.27-.794-.311-1.67-.043-.95-.053-1.235-.053-3.638 0-2.403.01-2.688.053-3.637.04-.877.188-1.354.31-1.671.162-.42.359-.72.672-1.036.316-.315.615-.51 1.035-.671.318-.125.795-.27 1.673-.311.948-.043 1.233-.053 3.636-.053zM18 9c-2.445 0-2.751.01-3.711.054-.957.045-1.612.195-2.184.418a4.385 4.385 0 00-1.595 1.039 4.417 4.417 0 00-1.037 1.594c-.223.572-.376 1.227-.419 2.184C9.009 15.249 9 15.557 9 18c0 2.444.01 2.751.054 3.711.045.957.195 1.613.418 2.184.23.593.537 1.095 1.039 1.595a4.398 4.398 0 001.594 1.038c.572.222 1.227.375 2.184.418.96.045 1.268.054 3.711.054 2.444 0 2.751-.01 3.711-.054.957-.045 1.613-.195 2.184-.419a4.385 4.385 0 001.595-1.038 4.398 4.398 0 001.038-1.594c.222-.572.375-1.227.418-2.184.045-.96.054-1.267.054-3.711s-.01-2.751-.054-3.711c-.045-.957-.195-1.612-.419-2.184a4.412 4.412 0 00-1.038-1.595 4.41 4.41 0 00-1.594-1.037c-.572-.223-1.227-.376-2.184-.419C20.751 9.009 20.444 9 18 9z">
@@ -379,20 +390,21 @@
                  </svg><span class=""></span></a>
 
              <!-- yt -->
-             <a class="audi-footer__social-media-link" href="http://www.youtube.com/" target="_blank"><svg width="36px"
-                     height="36px" class="social-media">
+             <a class="col-lg-3 mt-3 mb-3" href="http://www.youtube.com/" target="_blank"><svg width="36px"
+                     height="36px" class="yt">
                      <path
                          d="M28.79 13.58s-.206-1.448-.834-2.085c-.8-.837-1.695-.84-2.104-.89-2.94-.213-7.348-.213-7.348-.213h-.009s-4.408 0-7.347.213c-.41.05-1.304.053-2.104.89-.63.637-.834 2.085-.834 2.085S8 15.276 8 16.976v1.595c0 1.698.21 3.397.21 3.397s.205 1.447.834 2.085c.8.837 1.848.81 2.316.897 1.68.162 7.14.212 7.14.212s4.413-.006 7.35-.22c.412-.049 1.306-.053 2.106-.889.63-.637.834-2.085.834-2.085s.21-1.7.21-3.399v-1.593a31.8 31.8 0 00-.21-3.398zm-12.457 6.922l-.002-5.901 5.675 2.961-5.674 2.94z"
                          fill="currentColor"></path>
                  </svg><span class=""></span></a>
 
              <!-- tweet -->
-             <a class="" href="https://twitter.com/" target="_blank"><svg width="36px" height="36px"
-                     class="social-media">
+             <a class="col-lg-3 mt-3 mb-3" href="https://twitter.com/" target="_blank"><svg width="36px" height="36px"
+                     class="tw">
                      <path
                          d="M25.55 12.364c.982.177 1.993.12 2.95-.165a11.638 11.638 0 00-3.01 2.183 11.31 11.31 0 01-9.144 11.903 14.601 14.601 0 01-8.846-2.36s3.933 1.062 6.104-1.34c0 0-3.696.337-4.581-2.52a11.242 11.242 0 002.58-.364 4.197 4.197 0 01-3.413-4.115 4.05 4.05 0 001.928.515s-2.857-2.58-1.087-5.607c0 0 3.829 4.675 8.571 4.407a4.077 4.077 0 016.855-3.871 6.393 6.393 0 002.773-1.335 3.547 3.547 0 01-1.68 2.67z"
                          fill="currentColor"></path>
                  </svg><span class=""></span></a>
+                 </div>
          </div>
 
      </main>
