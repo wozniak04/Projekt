@@ -5,7 +5,7 @@ var l=plec.length;
 l--;
 const plecc=plec[l];
 
-alert(plecc);
+
 
 function specjalisci()
 { 
@@ -20,7 +20,7 @@ function specjalisci()
 
 function setings()
 { 
-  if(plecc='m')
+  if(plecc=='m')
   {
     czas=setTimeout(() => {
       as=new Audio("asystent/meski/ustawienia.mp3");
@@ -36,7 +36,7 @@ function stop()
 
 function towary()
 { 
-  if(plec=='m')
+  if(plecc=='m')
   {
     czas=setTimeout(() => {
       as=new Audio("asystent/meski/towary.mp3");
@@ -47,7 +47,7 @@ function towary()
 
 function nasz()
 { 
-  if(plecc='m')
+  if(plecc=='m')
   {
     czas=setTimeout(() => {
       as=new Audio("asystent/meski/sklepy.mp3");
@@ -58,7 +58,7 @@ function nasz()
 
 function onas()
 { 
-  if(plec=='m')
+  if(plecc=='m')
   {
   czas=setTimeout(() => {
     as=new Audio("asystent/meski/nas.mp3");
