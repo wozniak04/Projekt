@@ -1,7 +1,7 @@
 let czas;
 let as;
 const plec=document.querySelector("#plec").innerHTML;
-var l=plec.length();
+var l=plec.length;
 l--;
 const plecc=plec[l];
 
