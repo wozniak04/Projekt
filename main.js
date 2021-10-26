@@ -1,7 +1,11 @@
 let czas;
 let as;
 const plec=document.querySelector("#plec").innerHTML;
-alert(plec);
+var l=plec.length();
+l--;
+const plecc=plec[l];
+
+alert(plecc);
 
 function specjalisci()
 { 
