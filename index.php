@@ -322,13 +322,13 @@
              </div>
              <div class="dol">
                  
-                     <select name="pytania" >
-                         <option value="volvo"  >Volvo</option>
+                     <select name="pytania" id="git" onmouseleave="cos()">
+                         <option value="volvo">Volvo</option>
                          <option value="saab">Saab</option>
                          <option value="mercedes">Mercedes</option>
                          <option value="audi">Audi</option>
                      </select>
-                     <button onclick="cos()">dasds</button>
+                     <button>dasds</button>
 
 
                  

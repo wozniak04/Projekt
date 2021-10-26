@@ -5,9 +5,11 @@ var l=plec.length;
 l--;
 const plecc=plec[l];
 
-function cos(){
-alert("cos");
-
+function cos()
+{
+  const zet=document.querySelector("#git").value;
+  
+  alert(zet);
 }
 
 function specjalisci()
