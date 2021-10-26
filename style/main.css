@@ -1,3 +1,9 @@
+.body{
+	background-color: rgb(237, 234, 228);
+}
+.menu_color{
+	background-color: rgb(237, 234, 228);
+}
 .logo{
     width: 250px;
 }
@@ -208,10 +214,10 @@
 	margin: 5px;
 }
 .i{
-	border: 1px solid black;
 	grid-area:i;
 	margin: 5px;
-    padding: 15px;
+    padding: 15px; 
+	background-image: radial-gradient(circle, rgb(190, 209, 102), rgb(237, 234, 228));
 }
 .specjalisci{
     padding-top: 60px;

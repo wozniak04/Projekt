@@ -28,10 +28,10 @@
      <link rel="stylesheet" href="style/main.css">
  </head>
 
- <body>
+ <body class="body">
 
      <div class="collapse" id="navbarToggleExternalContent">
-         <div class="bg-light p-4 menu_wrap">
+         <div class="menu_color p-4 menu_wrap">
 
              <div class="wybierz_asys">
                  <h5 class="h4">Ustawienia</h5>
@@ -80,7 +80,7 @@
 
          </div>
      </div>
-     <nav class="navbar navbar-dark bg-light">
+     <nav class="navbar navbar-dark body">
          <div class="container-fluid">
              <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
                  data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
