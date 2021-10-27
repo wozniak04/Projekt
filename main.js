@@ -1,9 +1,9 @@
 let czas;
 let as;
 let wyb=true;
-let zd_as=document.createElement("img");
+let zd_as=document.querySelector("#zdj_odp");
 const plec=document.querySelector("#plec").innerHTML;
-const zdjecieasy=document.querySelector("#odp");
+
 var l=plec.length;
 l--;
 const plecc=plec[l];
@@ -12,8 +12,6 @@ if(plecc=='m')
   zd_as.src("zdjecia/men.png");
 else
   zd_as.src("zdjecia/kobita.png");
-
-  zdjecieasy.appendChild(zd_as);
 
 function wybor1()
 {
