@@ -52,11 +52,11 @@
                  <?php
 
                         echo "Witaj ".$_SESSION['username'].'!<br>';
+                        echo "<br><div id='plec'>Jesteś:".$_SESSION['gender']."</div>";
+                        echo "<p><b>Data dołączenia</b>: ".$_SESSION['created_at']."</p>";
                         if($_SESSION['admin'] == 1){
                             echo "Jesteś adminem";
                         }
-                        echo "<br><div id='plec'>Jesteś:".$_SESSION['gender']."</div>";
-                        echo "<p><b>Data dołączenia</b>: ".$_SESSION['created_at']."</p>";
 
                     ?>
              </div>
@@ -80,7 +80,7 @@
 
          </div>
      </div>
-     <nav class="navbar navbar-dark body">
+     <nav class="navbar navbar-dark color">
          <div class="container-fluid">
              <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
                  data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
@@ -118,7 +118,7 @@
          <!-- baner-->
          <div class="baner">
              <h2 class="pusteh2"></h2>
-             <h2>Jakieś motto</h2>
+             <h2 class="tekst"></br></br>„Są dwie drogi, aby przeżyć życie. Jedna to żyć tak, jakby nic nie było cudem. Druga to żyć tak, jakby cudem było wszystko.” - Albert Einstein</h2>
              <h2 class="pusteh2_1"></h2>
          </div>
 
@@ -163,7 +163,7 @@
                              </div>
                          </p>
                      </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/bionorica.jpg" alt="sinupret"></div>
+                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/bionorica.png" alt="sinupret"></div>
                  </div>
 
                  <div class="row mt-5">
@@ -175,7 +175,7 @@
                              </div>
                          </p>
                      </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/calcium.jpg" alt="Calcium Hasco"></div>
+                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/calcium.png" alt="Calcium Hasco"></div>
                  </div>
 
                  <div class="row mt-5">
@@ -187,7 +187,7 @@
                              </div>
                          </p>
                      </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/gripex.jpg" alt="gripex Hot"></div>
+                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/gripex.png" alt="gripex Hot"></div>
                  </div>
 
                  <div class="row mt-5">
@@ -199,7 +199,7 @@
                              </div>
                          </p>
                      </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/envil.jpg" alt="Envil katar"></div>
+                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/envil.png" alt="Envil katar"></div>
                  </div>
 
                  <div class="row mt-5">
@@ -211,7 +211,7 @@
                              </div>
                          </p>
                      </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/voltaren.jpg" alt="Voltaren Max"></div>
+                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/voltaren.png" alt="Voltaren Max"></div>
                  </div>
 
                  <div class="row mt-5">
@@ -223,7 +223,7 @@
                              </div>
                          </p>
                      </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/fervex.jpg" alt="Fervex"></div>
+                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/fervex.png" alt="Fervex"></div>
                  </div>
                  <div class="row mt-5">
                      <div class="opis col-lg-8">
@@ -234,7 +234,7 @@
                              </div>
                          </p>
                      </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/enterol.jpg" alt="Enterol"></div>
+                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/enterol.png" alt="Enterol"></div>
                  </div>
 
                  <div class="row mt-5">
@@ -246,7 +246,7 @@
                              </div>
                          </p>
                      </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/otrivin.jpg" alt="Otrivin"></div>
+                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/otrivin.png" alt="Otrivin"></div>
                  </div>
 
                  <div class="row mt-5">
@@ -258,7 +258,7 @@
                              </div>
                          </p>
                      </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/molekin.jpg" alt="Molekin D3"></div>
+                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/molekin.png" alt="Molekin D3"></div>
                  </div>
 
                  <div class="row mt-5">
@@ -270,7 +270,7 @@
                              </div>
                          </p>
                      </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/argentin.jpg" alt="Argentin"></div>
+                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/argentin.png" alt="Argentin"></div>
                  </div>
 
                  <div class="row mt-5">
@@ -282,7 +282,7 @@
                              </div>
                          </p>
                      </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/termometr.jpg" alt="Termometr"></div>
+                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/termometr.png" alt="Termometr"></div>
                  </div>
 
                  <div class="row mt-5">
@@ -294,7 +294,7 @@
                              </div>
                          </p>
                      </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/octanisept.jpg" alt="Octanisept"></div>
+                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/octanisept.png" alt="Octanisept"></div>
                  </div>
 
 
@@ -325,7 +325,7 @@
          <!-- czat -->
          <div class="o">
              <div class="gora">
-                 <div class="">
+                 <div>
                      Witaj w naszym czacie
                  </div>
              </div>
@@ -335,17 +335,17 @@
             </div>
             <!-- <hr class="hr"> -->
             <div class="pyta">
-                <button type="button" class="btn btn-outline-warning" onclick="bolglowy()">Co na ból głowy?</button>
-                <button type="button" class="btn btn-outline-warning" onclick="wapn()">Co na nie dobór wapnia?</button>
-                <button type="button" class="btn btn-outline-warning" onclick="przezie()">Co na przeziębienie?</button>
-                <button type="button" class="btn btn-outline-warning" onclick="katar()">Co na katar?</button>
-                <button type="button" class="btn btn-outline-warning" onclick="zatoki()">Co na zatoki?</button>
-                <button type="button" class="btn btn-outline-warning" onclick="obrzeki()">Co na obrzęki?</button>
-                <button type="button" class="btn btn-outline-warning" onclick="biegunka()">Co na biegunke?</button>
-                <button type="button" class="btn btn-outline-warning" onclick="bolgardla()">Co na ból gardła?</button>
-                <button type="button" class="btn btn-outline-warning" onclick="termo()">Jaki termometr?</button>
-                <button type="button" class="btn btn-outline-warning " onclick="przetarcia()">Co na przetarcia?</button>
-                <button type="button" class="btn btn-outline-warning ">Mam inne pytanie...</button>
+                <button type="button" class="btn btn-outline-light" onclick="bolglowy()">Co na ból głowy?</button>
+                <button type="button" class="btn btn-outline-light" onclick="wapn()">Co na nie dobór wapnia?</button>
+                <button type="button" class="btn btn-outline-light" onclick="przezie()">Co na przeziębienie?</button>
+                <button type="button" class="btn btn-outline-light" onclick="katar()">Co na katar?</button>
+                <button type="button" class="btn btn-outline-light" onclick="zatoki()">Co na zatoki?</button>
+                <button type="button" class="btn btn-outline-light" onclick="obrzeki()">Co na obrzęki?</button>
+                <button type="button" class="btn btn-outline-light" onclick="biegunka()">Co na biegunke?</button>
+                <button type="button" class="btn btn-outline-light" onclick="bolgardla()">Co na ból gardła?</button>
+                <button type="button" class="btn btn-outline-light" onclick="termo()">Jaki termometr?</button>
+                <button type="button" class="btn btn-outline-light" onclick="przetarcia()">Co na przetarcia?</button>
+                <button type="button" class="btn btn-outline-light">Mam inne pytanie...</button>
             </div>
 
                  
