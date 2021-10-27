@@ -330,6 +330,7 @@
                  </div>
              </div>
              <div class="odp">
+                 <img id="zdj_odp">
                  <p id="odpe"></p>
 
             </div>
