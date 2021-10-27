@@ -1,12 +1,12 @@
  <?php
 
-	// session_start();
+	session_start();
 	
-	// if (!isset($_SESSION['zalogowany']))
-	// {
-	// 	header('Location: index_logowanie.php');
-	// 	exit();
-	// }
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index_logowanie.php');
+		exit();
+	}
 	
 ?>
  <!DoCTYPE html>
@@ -37,7 +37,7 @@
                  <h5 class="h4">Ustawienia</h5>
                  <label id="asys_outdiv"><b>Asystent głosowy:</b></label><br>
 
-                 <input type="radio" name="wybor" id="asys_glos_wl" value="glos" onclick="wybor1()">
+                 <input type="radio" name="wybor" id="asys_glos_wl" value="glos" onclick="wybor1()" checked>
                  <label for="wybor1" id="asys_outdiv">Włącz</label>
 
                  <input type="radio" name="wybor" id="asys_glos_wyl" value="brak" onclick="wybor()">
@@ -94,7 +94,7 @@
      <main class="wrapper">
 
          <div class="q">
-             <img src="zdjecia/logo.png" alt="logo" class="logo">
+             <img src="zdjecia/Screensho-removebg-preview.png" alt="logo" class="logo">
          </div>
 
          <!-- nawigacja -->
