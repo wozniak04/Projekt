@@ -302,7 +302,7 @@
 
 
                  <div class="mapa" id="mapa">
-                     <h1>Nasze sklepy</h1>
+                     <h1>Nasze Apteki</h1>
 
                      <address>
                         
