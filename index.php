@@ -1,12 +1,12 @@
  <?php
 
-	session_start();
+	// session_start();
 	
-	if (!isset($_SESSION['zalogowany']))
-	{
-		header('Location: index_logowanie.php');
-		exit();
-	}
+	// if (!isset($_SESSION['zalogowany']))
+	// {
+	// 	header('Location: index_logowanie.php');
+	// 	exit();
+	// }
 	
 ?>
  <!DoCTYPE html>
@@ -157,7 +157,7 @@
                  <div class="row mt-5">
                      <div class="opis col-lg-8">
                          <p>
-                             <div class="lek1" onmouseenter="sinu()" onmouseleave="stop()">
+                             <div class="lek1" id="sinupret" onmouseenter="sinu()" onmouseleave="stop()">
                                  <h2>Sinupret:</h2> Lek Sinupret, tabletki drażowane, do leczenia ostrych niepowikłanych
                                  stanów zapalnych przynosowych z objawami kaszlu, bólu głowy i niedrażności nosa.
                              </div>
@@ -169,7 +169,7 @@
                  <div class="row mt-5">
                      <div class="opis col-lg-8">
                          <p>
-                             <div class="lek2" onmouseenter="calcu()" onmouseleave="stop()">
+                             <div class="lek2" id=calcium onmouseenter="calcu()" onmouseleave="stop()">
                                  <h2>Calcium Hasco:</h2> Lek Calcium Hasco, syrop, stosowany w leczeniu osteoporozy,
                                  uzupełnia niedobory wapnia w organizmie np. w okresie ciąży
                              </div>
@@ -181,7 +181,7 @@
                  <div class="row mt-5">
                      <div class="opis col-lg-8">
                          <p>
-                             <div class="lek3" onmouseenter="grip()" onmouseleave="stop()">
+                             <div class="lek3" id="gripex" onmouseenter="grip()" onmouseleave="stop()">
                                  <h2>Gripex Hot:</h2> Lek Gripex Hot, saszetki rozpuszczalne w wodzie, lek stosowany na
                                  goraczke, ból głowy, katar, ból mieśni, ból gardła
                              </div>
@@ -193,7 +193,7 @@
                  <div class="row mt-5">
                      <div class="opis col-lg-8">
                          <p>
-                             <div class="lek4" onmouseenter="envil()" onmouseleave="stop()">
+                             <div class="lek4" id="envil" onmouseenter="envil()" onmouseleave="stop()">
                                  <h2>Envil Katar:</h2> Lek Envil, podanie donosowe, łagodzi katar, udrażnia nos i
                                  zatoki, ułatwia oddychanie, działa przeciwbakteryjnie
                              </div>
@@ -205,7 +205,7 @@
                  <div class="row mt-5">
                      <div class="opis col-lg-8">
                          <p>
-                             <div class="lek5" onmouseenter="voltar()" onmouseleave="stop()">
+                             <div class="lek5" id="voltaren" onmouseenter="voltar()" onmouseleave="stop()">
                                  <h2>Voltaren Max:</h2> Lek Voltaren Max, podawany na skórę, Lek o silnym działaniu
                                  przeciwbólowym, przeciwzapalnym i przeciwobrzękowym
                              </div>
@@ -217,7 +217,7 @@
                  <div class="row mt-5">
                      <div class="opis col-lg-8">
                          <p>
-                             <div class="lek6" onmouseenter="fer()" onmouseleave="stop()">
+                             <div class="lek6" id="fervex" onmouseenter="fer()" onmouseleave="stop()">
                                  <h2>Fervex:</h2> Lek Fervex, saszetki rozpuszczalne w wodzie, leczy objawy
                                  przeziębienia i grypy jak i stanów grypopodobnych (gorączka i zapalenie gardła)
                              </div>
@@ -228,7 +228,7 @@
                  <div class="row mt-5">
                      <div class="opis col-lg-8">
                          <p>
-                             <div class="lek7" onmouseenter="enterol()" onmouseleave="stop()">
+                             <div class="lek7" id="enterol" onmouseenter="enterol()" onmouseleave="stop()">
                                  <h2>Enterol:</h2> Lek Enterol, kapsułki podawane doustnie, zapobiega biegunkom
                                  poantybiotykowym i zapobiega biegunkom podróżnym.
                              </div>
@@ -240,7 +240,7 @@
                  <div class="row mt-5">
                      <div class="opis col-lg-8">
                          <p>
-                             <div class="lek8" onmouseenter="otri()" onmouseleave="stop()">
+                             <div class="lek8" id="otrivin" onmouseenter="otri()" onmouseleave="stop()">
                                  <h2>Otrivin:</h2> Lek Otrivin, podanie donosowe, Pomaga na nadmierne przekrwienie błony
                                  śluzowej nosa w przebiegu przeziębienia lub kataru siennego
                              </div>
@@ -252,7 +252,7 @@
                  <div class="row mt-5">
                      <div class="opis col-lg-8">
                          <p>
-                             <div class="lek9" onmouseenter="molek()" onmouseleave="stop()">
+                             <div class="lek9" id="molekin" onmouseenter="molek()" onmouseleave="stop()">
                                  <h2>Molekin D3:</h2> Lek Molekin D3, tabletki powlekane, wpływa na układ odpornościowy,
                                  zdrowe kości i zęby i prawidłowy poziom wapnia we krwi
                              </div>
@@ -264,7 +264,7 @@
                  <div class="row mt-5">
                      <div class="opis col-lg-8">
                          <p>
-                             <div class="lek10" onmouseenter="arge()" onmouseleave="stop()">
+                             <div class="lek10" id="argentint" onmouseenter="arge()" onmouseleave="stop()">
                                  <h2>Argentin-T:</h2> Lek Argentin-T, spray do gardła, wspomaga leczenie stanów
                                  zapalnych gardła, spodowanych przez infekcje bakteryjne
                              </div>
@@ -276,7 +276,7 @@
                  <div class="row mt-5">
                      <div class="opis col-lg-8">
                          <p>
-                             <div class="lek11" onmouseenter="yuwe()" onmouseleave="stop()">
+                             <div class="lek11" id="yuwel" onmouseenter="yuwe()" onmouseleave="stop()">
                                  <h2>Termometr Yuwell:</h2> Termometr na podczerwień, świetny w pomiarze temperatury
                                  ciała.
                              </div>

@@ -470,55 +470,55 @@ function gut()
 function bolglowy()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="Na ból głowy polecamy Sinupret lub Gripex Hot";
+  odp.innerHTML="Na ból głowy polecamy <a href='#sinupret'>Sinupret</a> lub <a href='#calcium'>Gripex Hot</a>";
 }
 
 function wapn()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="Na nie dobór wapnia mamy Molekin D3 lub  Gripex Hot";
+  odp.innerHTML="Na nie dobór wapnia mamy <a href='#otrivin'>Molekin D3</a> lub <a href='#calcium'>Gripex Hot</a>";
 }
 
 function przezie()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="Na przeziębienie zaradzą Gripex Hot i Fervex";
+  odp.innerHTML="Na przeziębienie zaradzą <a href='#calcium'>Gripex Hot</a> i <a href='#voltaren'>Fervex";
 }
 
 function katar()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="Katar skutecznie zwalczą Gripex Hot lub Envil katar";
+  odp.innerHTML="Katar skutecznie zwalczą <a href='#calcium'>Gripex Hot</a> lub <a href='#gripex'>Envil katar</a>";
 }
 
 function zatoki()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="Na chore zatoki zaradzi envil katar";
+  odp.innerHTML="Na chore zatoki zaradzi <a href='#gripex'>envil katar</a>";
 }
 
 function obrzeki()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="Na obrzęki pomoże Voltaren max";
+  odp.innerHTML="Na obrzęki pomoże <a href='#envil'> Voltaren max </a>";
 }
 
 function biegunka()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="Na biegunke pomoże Enterol";
+  odp.innerHTML="Na biegunke pomoże <a href='#fervex'> Enterol</a>";
 }
 
 function bolgardla()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="Na ból gardła polecamy gripex Hot i Argentin-T";
+  odp.innerHTML="Na ból gardła polecamy <a href='#calcium'> gripex Hot</a> i <a href='#molekin'>Argentin-T</a>";
 }
 
 function termo()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="Niestety obecnie posiadamy tylko termometr yuwell";
+  odp.innerHTML="Niestety obecnie posiadamy tylko termometr <a href='#argentint'> yuwell </a>";
 }
 
 function przetarcia()
