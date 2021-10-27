@@ -3,7 +3,7 @@ let as;
 let wyb=true;
 let zd_as=new Image();
 const plec=document.querySelector("#plec").innerHTML;
-const zdjecieasy=document.querySelector("#zdj_odp");
+const zdjecieasy=document.querySelector("#odp");
 var l=plec.length;
 l--;
 const plecc=plec[l];
@@ -472,59 +472,59 @@ function gut()
 function bolglowy()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML=" na ból głowy polecamy Sinupret lub Gripex Hot";
+  odp.innerHTML="Na ból głowy polecamy Sinupret lub Gripex Hot";
 }
 
 function wapn()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML=" na nie dobór wapnia mamy Molekin D3 lub  Gripex Hot";
+  odp.innerHTML="Na nie dobór wapnia mamy Molekin D3 lub  Gripex Hot";
 }
 
 function przezie()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="na przeziębienie zaradzą Gripex Hot i Fervex";
+  odp.innerHTML="Na przeziębienie zaradzą Gripex Hot i Fervex";
 }
 
 function katar()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="katar skutecznie zwalczą Gripex Hot lub Envil katar";
+  odp.innerHTML="Katar skutecznie zwalczą Gripex Hot lub Envil katar";
 }
 
 function zatoki()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="na chore zatoki zaradzi emvil katar";
+  odp.innerHTML="Na chore zatoki zaradzi envil katar";
 }
 
 function obrzeki()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="na obrzęki pomoże Voltaren max";
+  odp.innerHTML="Na obrzęki pomoże Voltaren max";
 }
 
 function biegunka()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="na biegunke pomoże Enterol";
+  odp.innerHTML="Na biegunke pomoże Enterol";
 }
 
 function bolgardla()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="na ból gardła polecamy gripex Hot i Argentin-T";
+  odp.innerHTML="Na ból gardła polecamy gripex Hot i Argentin-T";
 }
 
 function termo()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="niestety obecnie posiadamy tylko termometr yuwell";
+  odp.innerHTML="Niestety obecnie posiadamy tylko termometr yuwell";
 }
 
 function przetarcia()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="na przetarcia bardzo dobry jest octanisept";
+  odp.innerHTML="Na przetarcia bardzo dobry jest octanisept";
 }
