@@ -9,9 +9,9 @@ l--;
 const plecc=plec[l];
 
 if(plecc=='m')
-  zd_as.src("zdjecia/men.png");
+  zd_as.src="zdjecia/men.png";
 else
-  zd_as.src("zdjecia/kobita.png");
+  zd_as.src="zdjecia/kobita.png";
 
 function wybor1()
 {
