@@ -1,7 +1,7 @@
 let czas;
 let as;
 let wyb=true;
-let zd_as=new Image();
+let zd_as=document.createElement("img");
 const plec=document.querySelector("#plec").innerHTML;
 const zdjecieasy=document.querySelector("#odp");
 var l=plec.length;
