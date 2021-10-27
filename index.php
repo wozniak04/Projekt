@@ -288,7 +288,7 @@
                  <div class="row mt-5">
                      <div class="opis col-lg-8" onmouseenter="octa()" onmouseleave="stop()">
                          <p>
-                             <div class="lek12">
+                             <div class="lek12" id="octanisept">
                                  <h2>Octanisept:</h2> Lek Octanisept, podanie na skóre (doogniskowo), lek stosowany na
                                  rany, błonę śluzową i skórę
                              </div>

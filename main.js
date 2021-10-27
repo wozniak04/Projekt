@@ -524,5 +524,5 @@ function termo()
 function przetarcia()
 {
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="Na przetarcia bardzo dobry jest octanisept";
+  odp.innerHTML="Na przetarcia bardzo dobry jest <a href='#octanisept'>octanisept</a>";
 }
