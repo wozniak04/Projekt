@@ -13,6 +13,7 @@
 }
 
 .q{
+	text-align: center;
 	grid-area: q;
 	margin: 5px;
     padding: 5px;
