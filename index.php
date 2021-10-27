@@ -1,12 +1,12 @@
  <?php
 
-	session_start();
+	// session_start();
 	
-	if (!isset($_SESSION['zalogowany']))
-	{
-		header('Location: index_logowanie.php');
-		exit();
-	}
+	// if (!isset($_SESSION['zalogowany']))
+	// {
+	// 	header('Location: index_logowanie.php');
+	// 	exit();
+	// }
 	
 ?>
  <!DoCTYPE html>
@@ -37,10 +37,10 @@
                  <h5 class="h4">Ustawienia</h5>
                  <label id="asys_outdiv"><b>Asystent głosowy:</b></label><br>
 
-                 <input type="radio" name="wybor" id="asys_glos_wl" value="glos">
+                 <input type="radio" name="wybor" id="asys_glos_wl" value="glos" onclick="wybor1()">
                  <label for="wybor1" id="asys_outdiv">Włącz</label>
 
-                 <input type="radio" name="wybor" id="asys_glos_wyl" value="brak">
+                 <input type="radio" name="wybor" id="asys_glos_wyl" value="brak" onclick="wybor()">
                  <label for="wybor2" id="asys_outdiv">wyłącz</label><br>
 
                  <!--przycisk od asystena czatowe myśle że można wywalić bo on bedzie zawsze aktywny. Co wy na to???  -->
@@ -128,14 +128,14 @@
              <div class="specjalisci spec_wrap" id="specjalisci">
 
 
-                 <div class="opis1">
+                 <div class="opis1" onmouseenter="gut()" onmouseleave="stop()">
                      <h3>Arkadiusz Guth</h3></br>
                      Chirurg, obecnie przyjmuje pacjentów w Elektryku w Wejherowie. Specjalizuje się w chirurgi
                      plastycznej oraz klatki piersiowej.
                      Ukończył Pomorski Uniwersytet Medyczny w Szczecinie.
                  </div>
                  <div class="zdje1"></div>
-                 <div class="opis2">
+                 <div class="opis2" onmouseenter="wozini()" onmouseleave="stop()">
                      <h3>Mikołaj Woźniak</h3></br>
                      Neurolog, obecnie przyjmuje pacjentów w Elektryku w Wejherowie. Specjalizuje się w leczeniu chorób
                      obwodowego i ośrodkowego
@@ -143,7 +143,7 @@
                      Kopernika w Toruniu.
                  </div>
                  <div class="zdje2"></div>
-                 <div class="opis3">
+                 <div class="opis3" onmouseenter="pacha()" onmouseleave="stop()">
                      <h3>Kacper Paszki</h3></br>
                      Laryngolog, obecnie przyjmuje pacjentów w Elektryku w Wejherowie. Specjalizuje się w wykonywaniu
                      zabiegów chirurgicznych w
@@ -330,21 +330,21 @@
                  </div>
              </div>
              <div class="odp">
-                 
+                 <p id="odpe"></p>
 
             </div>
             <!-- <hr class="hr"> -->
             <div class="pyta">
-                <button type="button" class="btn btn-outline-warning">Co na ból głowy?</button>
-                <button type="button" class="btn btn-outline-warning">Co na nie dobór wapnia?</button>
-                <button type="button" class="btn btn-outline-warning">Co na przeziębienie?</button>
-                <button type="button" class="btn btn-outline-warning">Co na katar?</button>
-                <button type="button" class="btn btn-outline-warning">Co na zatoki?</button>
-                <button type="button" class="btn btn-outline-warning">Co na obrzęki?</button>
-                <button type="button" class="btn btn-outline-warning">Co na biegunke?</button>
-                <button type="button" class="btn btn-outline-warning">Co na ból gardła?</button>
-                <button type="button" class="btn btn-outline-warning">Jaki termometr?</button>
-                <button type="button" class="btn btn-outline-warning ">Co na przetarcia?</button>
+                <button type="button" class="btn btn-outline-warning" onclick="bolglowy()">Co na ból głowy?</button>
+                <button type="button" class="btn btn-outline-warning" onclick="wapn()">Co na nie dobór wapnia?</button>
+                <button type="button" class="btn btn-outline-warning" onclick="przezie()">Co na przeziębienie?</button>
+                <button type="button" class="btn btn-outline-warning" onclick="katar()">Co na katar?</button>
+                <button type="button" class="btn btn-outline-warning" onclick="zatoki()">Co na zatoki?</button>
+                <button type="button" class="btn btn-outline-warning" onclick="obrzeki()">Co na obrzęki?</button>
+                <button type="button" class="btn btn-outline-warning" onclick="biegunka()">Co na biegunke?</button>
+                <button type="button" class="btn btn-outline-warning" onclick="bolgardla()">Co na ból gardła?</button>
+                <button type="button" class="btn btn-outline-warning" onclick="termo()">Jaki termometr?</button>
+                <button type="button" class="btn btn-outline-warning " onclick="przetarcia()">Co na przetarcia?</button>
                 <button type="button" class="btn btn-outline-warning ">Mam inne pytanie...</button>
             </div>
 
