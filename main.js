@@ -531,3 +531,25 @@ function kontakt(){
   const odp=document.querySelector("#odpe");
   odp.innerHTML="Jeśli chcesz skontaktować się z pomocą, napisz email pod adres <a href='mailto:arkadiuszguth@gmail.com'> arkadiuszguth@gmail.com </a>";
 }
+
+function wykonawcy()
+{ 
+  if(wyb==true)
+  {
+    if(plecc=='m')
+    {
+    czas=setTimeout(() => {
+      as=new Audio("asystent/meski/wykonawcy.mp3");
+      as.play();
+    }, 1000);
+    } 
+    
+    if(plecc=='k')
+    {
+      czas=setTimeout(() => {
+        as=new Audio("asystent/zenski/wykonawcy.mp3");
+        as.play();
+      }, 1000);
+    }
+  }
+}

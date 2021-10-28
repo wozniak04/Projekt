@@ -321,7 +321,7 @@
                     </address>
                      
                 </div>
-                <div class="onas">
+                <div class="onas" onmouseenter="wykonawcy()" onmouseleave="stop()">
                     <h1>O nas</h1>
                     Wykonawcami strony są uczniowie Powiatowego Zespołu Szkół Nr. 2 im. Bohaterskiej Załogi ORP "Orzeł" w Wejherowie :</br>
                     - Kacper Paszki (Front-End)</br>
