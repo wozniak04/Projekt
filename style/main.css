@@ -2,6 +2,69 @@
 	background-color:floralwhite;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* zmiana kolory zaznaczenia */
+div::selection {
+	color:floralwhite;
+	background:rgb(120, 255, 66);
+  }
+div::-moz-selection { /* dla Firefox */
+	color:floralwhite;
+	background:rgb(120, 255, 66);
+}
+p::selection{
+	color:floralwhite;
+	background:rgb(120, 255, 66);
+}
+p::-moz-selection{
+	color:floralwhite;
+	background:rgb(120, 255, 66);
+}
+h1::selection{
+	color:floralwhite;
+	background:rgb(120, 255, 66);
+}
+h1::-moz-selection{
+	color:floralwhite;
+	background:rgb(120, 255, 66);
+}
+h2::selection{
+	color:floralwhite;
+	background:rgb(120, 255, 66);
+}
+h2::-moz-selection{
+	color:floralwhite;
+	background:rgb(120, 255, 66);
+}
+h3::selection{
+	color:floralwhite;
+	background:rgb(120, 255, 66);
+}
+h3::-moz-selection{
+	color:floralwhite;
+	background:rgb(120, 255, 66);
+}
+address::selection{
+	color:floralwhite;
+	background:rgb(120, 255, 66);
+}
+address::-moz-selection{
+	color:floralwhite;
+	background:rgb(120, 255, 66);
+}
+/* wszystkie linki a */
+a{
+	text-decoration: none;
+}
+a:hover{
+	color:rgb(120, 255, 66);
+}
+.odp a:hover{
+	color:floralwhite;
+}
+
+/* koniec */
+
+  /* koniec */
 #zdj_odp{
 	width: 100px;
 }
@@ -101,7 +164,7 @@
 	border-radius: 10px;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../zdjecia/baner.jfif');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../zdjecia/baner.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	display: grid;
@@ -137,38 +200,26 @@
 /* koniec baneru */
 
 /* asytenci */
-.opis1{
-	grid-area: o1;
-}
-.zdj1{
-	grid-area: z1;
-}
-.opis2{
-	grid-area: o2;
-}
-.zdj2{
-	grid-area: z2;
-}
-.opis3{
-	grid-area: o3;
-}
-.zdj3{
-	grid-area: z3;
-}
-.spec_wrap{
-	display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 50px 540px; */
-    grid-template-areas: 
-        "o1 z1" /*100*/
-        "o2 z2" /*110*/
-		"o3 z3"
+.specjalisci{
+	text-justify: inter-word;
+	text-align: center;
 }
 .spec_wrap h3{
 	margin-top: 20px;
 }
+h1{
+	color:black;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	font-weight: bolder;
+	text-align: center;
+
+}
 /* koniec asystentów */
 /* css do leków */
+.pierwszy_lek{
+	padding-top: 80px;
+}
 .lek1{grid-area: lek1;}
 .lek2{grid-area: lek2;}
 .lek3{grid-area: lek3;}

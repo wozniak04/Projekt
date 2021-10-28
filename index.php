@@ -52,8 +52,8 @@
                  <?php
 
                         echo "Witaj ".$_SESSION['username'].'!<br>';
-                        echo "<br><div id='plec'>Jesteś:".$_SESSION['gender']."</div>";
-                        echo "<p><b>Data dołączenia</b>: ".$_SESSION['created_at']."</p>";
+                        echo "<div id='plec'>Jesteś:".$_SESSION['gender']."</div>";
+                        echo "<b>Data dołączenia</b>: ".$_SESSION['created_at'];
                         if($_SESSION['admin'] == 1){
                             echo "Jesteś adminem";
                         }
@@ -126,7 +126,7 @@
 
          <div class="i">
              <div class="specjalisci spec_wrap" id="specjalisci">
-
+                        <h1>Nasi specjaliści</h1>
 
                  <div class="opis1" onmouseenter="gut()" onmouseleave="stop()">
                      <h3>Arkadiusz Guth</h3></br>
@@ -153,17 +153,19 @@
              </div>
              <!-- dostępne towary i zdjecia -->
              <div class="dtowary container" id="dtowary">
-
-                 <div class="row mt-5">
-                     <div class="opis col-lg-8">
-                         <p>
-                             <div class="lek1" id="sinupret" onmouseenter="sinu()" onmouseleave="stop()">
-                                 <h2>Sinupret:</h2> Lek Sinupret, tabletki drażowane, do leczenia ostrych niepowikłanych
-                                 stanów zapalnych przynosowych z objawami kaszlu, bólu głowy i niedrażności nosa.
-                             </div>
-                         </p>
-                     </div>
-                     <div class="col-lg-4 text-center"><img src="zdjecia/leki/bionorica.png" alt="sinupret"></div>
+                 <h1>Dostępne towary</h1>
+                <div  id="sinupret" class="pierwszy_lek">
+                    <div class="row mt-5">
+                        <div class="opis col-lg-8">
+                            <p>
+                                <div class="lek1" onmouseenter="sinu()" onmouseleave="stop()">
+                                    <h2>Sinupret:</h2> Lek Sinupret, tabletki drażowane, do leczenia ostrych niepowikłanych
+                                    stanów zapalnych przynosowych z objawami kaszlu, bólu głowy i niedrażności nosa.
+                                </div>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 text-center"><img src="zdjecia/leki/bionorica.png" alt="sinupret"></div>
+                    </div>
                  </div>
 
                  <div class="row mt-5">
@@ -301,7 +303,7 @@
 
 
 
-                 <div class="mapa" id="mapa">
+                <div class="mapa" id="mapa">
                      <h1>Nasze Apteki</h1>
 
                      <address>
@@ -312,14 +314,21 @@
                         Polska
 
                     </address>
-
-                    
-
-                     Jeśli widzisz jakieś błędy, proszę <a href="mailto:arkadiuszguth@gmail.com">
-                        skontaktuj się z administratorem</a>.<br>
-                 </div>
-             </div>
-         </div>
+                     
+                </div>
+                <div class="onas">
+                    <h1>O nas</h1>
+                    Wykonawcami strony są uczniowie Powiatowego Zespołu Szkół Nr. 2 im. Bohaterskiej Załogi ORP "Orzeł" w Wejherowie :</br>
+                    - Kacper Paszki (Front-End)</br>
+                    - Arek Guth (Back-End & Front-End)</br>
+                    - Mikołaj Woźniak (Back-End)</br>
+                    Strona została wykonana w celu testowania funkcjonalności asystenta strony.
+                    </br></br>
+                    Jeśli widzisz jakieś błędy, proszę <a href="mailto:arkadiuszguth@gmail.com">
+                    skontaktuj się z administratorem.</a>
+                </div>
+            </div>
+        </div>
 
 
          <!-- czat -->
