@@ -6,7 +6,7 @@
 	width: 100px;
 }
 .color{
-	background-color: wheat;
+	background-color: rgb(118, 207, 83);
 }
 .menu_color{
 	background-color: rgb(120, 255, 66);
@@ -47,7 +47,7 @@
 	grid-area: wylog;
 }
 .menu_wrap{
-	background-color: wheat;
+	background-color: rgb(118, 207, 83);
 	text-align: center;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
