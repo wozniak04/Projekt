@@ -529,5 +529,5 @@ function przetarcia()
 
 function kontakt(){
   const odp=document.querySelector("#odpe");
-  odp.innerHTML="Jeśli chcesz skontaktować się z pomocą, napisz email pod adres <a href='mailto:arkadiuszguth@gmail.com'> arkadiuszguth@gmail.com </a> lub zadzwoń pod numer 997112211";
+  odp.innerHTML="Jeśli chcesz skontaktować się z pomocą, napisz email pod adres <a href='mailto:arkadiuszguth@gmail.com'> arkadiuszguth@gmail.com </a>";
 }
