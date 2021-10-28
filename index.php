@@ -308,7 +308,7 @@
 
 
 
-                <div class="mapa" id="mapa">
+                <div class="mapa" id="mapa" onmouseenter="odwiedz()" onmouseleave="stop()">
                      <h1>Nasze Apteki</h1>
 
                      <address>

@@ -553,3 +553,25 @@ function wykonawcy()
     }
   }
 }
+
+function odwiedz()
+{ 
+  if(wyb==true)
+  {
+    if(plecc=='m')
+    {
+    czas=setTimeout(() => {
+      as=new Audio("asystent/meski/visit.mp3");
+      as.play();
+    }, 1000);
+    } 
+    
+    if(plecc=='k')
+    {
+      czas=setTimeout(() => {
+        as=new Audio("asystent/zenski/visit.mp3");
+        as.play();
+      }, 1000);
+    }
+  }
+}
