@@ -362,6 +362,8 @@
                 <button type="button" class="btn btn-outline-light" onclick="przetarcia()">Co na przetarcia?</button>
                 <button type="submit" class="btn btn-outline-light" onclick="kontakt()">Mam inne pytanie...</button>
                 
+                   <a href="tel:+48537798500"> <button type="submit" class="btn btn-outline-light">Zadzwoń</button></a>
+                
             </div>
 
                  
