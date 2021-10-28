@@ -308,10 +308,10 @@
 
 
 
-                <div class="mapa" id="mapa" onmouseenter="odwiedz()" onmouseleave="stop()">
+                <div class="mapa" id="mapa" >
                      <h1>Nasze Apteki</h1>
 
-                     <address>
+                     <address onmouseenter="odwiedz()" onmouseleave="stop()">
                         
                         Możesz nas odwiedzić <a href="https://goo.gl/maps/vXZUasuTH7mUA6Ah7">tu:</a><br>
                         Wejherowo<br>
@@ -321,16 +321,16 @@
                     </address>
                      
                 </div>
-                <div class="onas" onmouseenter="wykonawcy()" onmouseleave="stop()">
+                <div class="onas" >
                     <h1>O nas</h1>
-                    Wykonawcami strony są uczniowie Powiatowego Zespołu Szkół Nr. 2 im. Bohaterskiej Załogi ORP "Orzeł" w Wejherowie :</br>
+                    <p onmouseenter="wykonawcy()" onmouseleave="stop()">Wykonawcami strony są uczniowie Powiatowego Zespołu Szkół Nr. 2 im. Bohaterskiej Załogi ORP "Orzeł" w Wejherowie :</br>
                     - Kacper Paszki (Front-End)</br>
                     - Arek Guth (Back-End & Front-End)</br>
                     - Mikołaj Woźniak (Back-End)</br>
                     Strona została wykonana w celu testowania funkcjonalności asystenta strony.
                     </br></br>
                     Jeśli widzisz jakieś błędy, proszę <a href="mailto:arkadiuszguth@gmail.com">
-                    skontaktuj się z administratorem.</a>
+                    skontaktuj się z administratorem.</a></p>
                 </div>
             </div>
         </div>
