@@ -107,7 +107,7 @@
                      <a href="#dtowary" onmouseenter="towary()" onmouseleave="stop()">Dostępne towary</a>
                  </li>
                  <li class="sklepy">
-                     <a href="#mapa" onmouseenter="nasz()" onmouseleave="stop()">Nasze sklepy</a>
+                     <a href="#mapa" onmouseenter="nasz()" onmouseleave="stop()">Nasze Apteki</a>
                  </li>
                  <li class="my">
                      <a href="#my" class="my" onmouseenter="onas()" onmouseleave="stop()">O nas</a>
@@ -118,7 +118,12 @@
          <!-- baner-->
          <div class="baner">
              <h2 class="pusteh2"></h2>
-             <h2 class="tekst"></br></br>„Są dwie drogi, aby przeżyć życie. Jedna to żyć tak, jakby nic nie było cudem. Druga to żyć tak, jakby cudem było wszystko.” - Albert Einstein</h2>
+             <h2 class="tekst"></br></br>„Szlachetne zdrowie,</br>
+                                        Nikt się nie dowie,</br>
+                                        Jako smakujesz,</br>
+                                        Aż się zepsujesz.</br>
+                                        ~ Jan Kochanowski
+                </h2>
              <h2 class="pusteh2_1"></h2>
          </div>
 
@@ -355,7 +360,9 @@
                 <button type="button" class="btn btn-outline-light" onclick="bolgardla()">Co na ból gardła?</button>
                 <button type="button" class="btn btn-outline-light" onclick="termo()">Jaki termometr?</button>
                 <button type="button" class="btn btn-outline-light" onclick="przetarcia()">Co na przetarcia?</button>
-                <button type="button" class="btn btn-outline-light">Mam inne pytanie...</button>
+                <form action="mail.php" method="POST">
+                    <button type="submit" class="btn btn-outline-light">Mam inne pytanie...</button>
+                </form>
             </div>
 
                  
