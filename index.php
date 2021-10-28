@@ -360,9 +360,9 @@
                 <button type="button" class="btn btn-outline-light" onclick="bolgardla()">Co na ból gardła?</button>
                 <button type="button" class="btn btn-outline-light" onclick="termo()">Jaki termometr?</button>
                 <button type="button" class="btn btn-outline-light" onclick="przetarcia()">Co na przetarcia?</button>
-                <form action="mail.php" method="POST">
-                    <button type="submit" class="btn btn-outline-light">Mam inne pytanie...</button>
-                </form>
+                
+                   <a href="tel:+48537798500"> <button type="submit" class="btn btn-outline-light">Zadzwoń</button></a>
+                
             </div>
 
                  
