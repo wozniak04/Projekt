@@ -131,7 +131,7 @@
 
          <div class="i">
              <div class="specjalisci spec_wrap" id="specjalisci">
-                        <h1>Nasi specjaliści</h1>
+                        <h1 onmouseenter="specjalisci()" onmouseleave="stop()">Nasi specjaliści</h1>
 
                  <div class="opis1" onmouseenter="gut()" onmouseleave="stop()">
                      <h3>Arkadiusz Guth</h3></br>
@@ -158,7 +158,7 @@
              </div>
              <!-- dostępne towary i zdjecia -->
              <div class="dtowary container" id="dtowary">
-                 <h1>Dostępne towary</h1>
+                 <h1 onmouseenter="towary()" onmouseleave="stop()">Dostępne towary</h1>
                 <div  id="sinupret" class="pierwszy_lek">
                     <div class="row mt-5">
                         <div class="opis col-lg-8">
@@ -309,7 +309,7 @@
 
 
                 <div class="mapa" id="mapa" >
-                     <h1>Nasze Apteki</h1>
+                     <h1 onmouseenter="nasz()" onmouseleave="stop()">Nasze Apteki</h1>
 
                      <address onmouseenter="odwiedz()" onmouseleave="stop()">
                         
@@ -322,7 +322,7 @@
                      
                 </div>
                 <div class="onas" >
-                    <h1>O nas</h1>
+                    <h1 onmouseenter="onas()" onmouseleave="stop()">O nas</h1>
                     <p onmouseenter="wykonawcy()" onmouseleave="stop()">Wykonawcami strony są uczniowie Powiatowego Zespołu Szkół Nr. 2 im. Bohaterskiej Załogi ORP "Orzeł" w Wejherowie :</br>
                     - Kacper Paszki (Front-End)</br>
                     - Arek Guth (Back-End & Front-End)</br>
