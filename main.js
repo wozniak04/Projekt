@@ -526,3 +526,8 @@ function przetarcia()
   const odp=document.querySelector("#odpe");
   odp.innerHTML="Na przetarcia bardzo dobry jest <a href='#octanisept'>octanisept</a>";
 }
+
+function kontakt(){
+  const odp=document.querySelector("#odpe");
+  odp.innerHTML="Jeśli chcesz skontaktować się z pomocą, napisz email pod adres <a href='mailto:arkadiuszguth@gmail.com'> arkadiuszguth@gmail.com </a> lub zadzwoń pod numer 997112211";
+}
